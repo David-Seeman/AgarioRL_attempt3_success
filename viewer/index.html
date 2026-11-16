@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Splitrun Replays</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f2f4f7; --panel: #ffffff; --ink: #1d2430; --muted: #6b7482; --line: #dde2e8;
+    --grid: #000; --world: #F2FBFF; --a: #1080ff; --a-edge: #0e73e6; --b: #ff8a10; --b-edge: #e67c0e;
+    --accent: #2f7de1; --eat: #c0392b; --merge: #6b7482;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink);
+         display: grid; grid-template-columns: 280px 1fr; height: 100vh; overflow: hidden; }
+  aside { background: var(--panel); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; }
+  aside h1 { font-size: 14px; margin: 14px 14px 4px; }
+  aside .sub { color: var(--muted); margin: 0 14px 10px; font-size: 12px; }
+  #list { overflow-y: auto; flex: 1; border-top: 1px solid var(--line); }
+  .item { padding: 8px 14px; border-bottom: 1px solid var(--line); cursor: pointer; }
+  .item:hover { background: #f5f8fc; }
+  .item.sel { background: #e8f1fd; box-shadow: inset 3px 0 0 var(--accent); }
+  .item .n { font-weight: 600; word-break: break-word; }
+  .item .m { color: var(--muted); font-size: 11px; }
+  .tag { display: inline-block; font-size: 10px; padding: 0 5px; border-radius: 3px; background: #eef1f5; color: var(--muted); margin-left: 4px; }
+  .tag.server { background: #fde9e2; color: #a2451b; }
+  main { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+  #desc { padding: 10px 14px; background: var(--panel); border-bottom: 1px solid var(--line); min-height: 20px; }
+  #stage { position: relative; flex: 1; min-height: 0; }
+  canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+  #hud { position: absolute; left: 10px; top: 10px; background: rgba(255,255,255,.92); border: 1px solid var(--line);
+         border-radius: 6px; padding: 8px 10px; font-variant-numeric: tabular-nums; pointer-events: none; min-width: 210px; }
+  #hud .row { display: flex; justify-content: space-between; gap: 12px; }
+  .sw { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+  #events { position: absolute; right: 10px; top: 10px; width: 250px; max-height: 45%; overflow: hidden; background: rgba(255,255,255,.92);
+            border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; font-variant-numeric: tabular-nums; pointer-events: none; }
+  #events div { white-space: nowrap; }
+  #events .eat { color: var(--eat); }
+  #events .merge { color: var(--merge); }
+  #events .old { opacity: .45; }
+  #controls { display: flex; align-items: center; gap: 10px; padding: 8px 14px; background: var(--panel); border-top: 1px solid var(--line); flex-wrap: wrap; }
+  #controls button { font: inherit; padding: 4px 10px; border: 1px solid var(--line); background: #fff; border-radius: 5px; cursor: pointer; }
+  #controls button:hover { border-color: var(--accent); }
+  #scrub { flex: 1; min-width: 160px; }
+  #time { font-variant-numeric: tabular-nums; min-width: 150px; }
+  label { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); }
+  select { font: inherit; }
+  #tabs { display: flex; gap: 0; margin: 0 14px 10px; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+  #tabs button { flex: 1; font: inherit; padding: 6px 4px; border: 0; background: #fff; color: var(--muted); cursor: pointer; }
+  #tabs button + button { border-left: 1px solid var(--line); }
+  #tabs button.on { background: #e8f1fd; color: var(--ink); font-weight: 600; }
+  #catlist, #livepanel { overflow-y: auto; flex: 1; border-top: 1px solid var(--line); }
+  #livepanel { padding: 12px 14px; }
+  #livepanel .big { font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  #livepanel .runs { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 8px; }
+  #livepanel .bar { font-size: 10.5px; padding: 1px 6px; border-radius: 9px; background: #eef1f5; font-variant-numeric: tabular-nums; }
+  #livepanel .bar.long { background: #dff3e4; }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #2eb85c; margin-right: 6px; animation: blink 1.2s infinite; }
+  @keyframes blink { 50% { opacity: .25; } }
+  .catintro { padding: 10px 14px; color: var(--muted); font-size: 12px; border-bottom: 1px solid var(--line); }
+  .chips { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+  .chip { font-size: 10.5px; padding: 1px 6px; border-radius: 9px; background: #eef1f5; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .chip.key { background: #e8f1fd; }
+  @media (max-width: 760px) { body { grid-template-columns: 1fr; grid-template-rows: 180px 1fr; } }
+</style>
+</head>
+<body>
+<aside>
+  <h1>Splitrun replays</h1>
+  <div class="sub">Everything under <code>runs/</code>. Space = play/pause, ←/→ = step one tick.</div>
+  <div id="tabs"><button data-t="all">All replays</button><button data-t="free">Non-periodic catalogue</button><button data-t="live">Live controller</button></div>
+  <input id="filter" placeholder="filter (e.g. discover, technique, 2plus3)" style="margin:0 14px 10px;padding:5px 8px;border:1px solid var(--line);border-radius:5px;font:inherit">
+  <div id="list"></div>
+  <div id="catlist" style="display:none"></div>
+  <div id="livepanel" style="display:none"></div>
+</aside>
+<main>
+  <div id="desc">Loading…</div>
+  <div id="stage">
+    <canvas id="cv"></canvas>
+    <div id="hud"></div>
+    <div id="events"></div>
+  </div>
+  <div id="controls">
+    <button id="play">▶ Play</button>
+    <button id="back">◀ tick</button>
+    <button id="fwd">tick ▶</button>
+    <input id="scrub" type="range" min="0" max="0" value="0">
+    <span id="time"></span>
+    <label>speed <select id="speed"><option>0.1</option><option>0.25</option><option>0.5</option><option selected>1</option><option>2</option><option>4</option><option>8</option></select></label>
+    <label>camera <select id="cam"><option value="fixed">fixed (whole run)</option><option value="follow">follow pair</option></select></label>
+    <label title="agar.io-style client animation: every piece eases to its new position and size over ~3 ticks; eaten pieces slide into their eater"><input type="checkbox" id="smooth" checked> smooth</label>
+    <label><input type="checkbox" id="cursors" checked> cursors</label>
+    <label><input type="checkbox" id="trail" checked> centre trail</label>
+    <label><input type="checkbox" id="ids"> ids</label>
+    <label><input type="checkbox" id="marks"> boost/merge marks</label>
+    <label>overlay <select id="overlay"><option value="">none</option></select></label>
+  </div>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const cv = $("cv"), ctx = cv.getContext("2d");
+let tab = new URLSearchParams(location.search).get("tab") || "all", cat = [];
+let index = [], rep = null, ov = null, tick = 0, playing = false, acc = 0, last = 0, cam = null, com = [];
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const COL = () => [[css("--a"), css("--a-edge")], [css("--b"), css("--b-edge")], ["#8fcf6a", "#7ab85a"]];
+const fmt = m => m >= 1000 ? (m / 1000).toFixed(m >= 10000 ? 1 : 2) + "k" : Math.round(m).toString();
+
+async function loadIndex() {
+  index = await (await fetch("../runs/index.json", { cache: "no-store" })).json();
+  const list = $("list"); list.innerHTML = "";
+  const ovSel = $("overlay"); ovSel.innerHTML = '<option value="">none</option>';
+  index.forEach((it, i) => {
+    const d = document.createElement("div"); d.className = "item"; d.dataset.i = i;
+    d.innerHTML = `<div class="n">${it.name}<span class="tag ${it.source}">${it.source}</span></div><div class="m">${it.path} · ${(it.ticks / 25).toFixed(1)} s</div>`;
+    d.onclick = () => select(i); list.appendChild(d);
+    const o = document.createElement("option"); o.value = i; o.textContent = it.name; ovSel.appendChild(o);
+  });
+  $("filter").oninput = () => {
+    const q = $("filter").value.toLowerCase();
+    document.querySelectorAll(".item").forEach(d => {
+      const it = index[+d.dataset.i];
+      d.style.display = !q || (it.name + " " + it.path).toLowerCase().includes(q) ? "" : "none";
+    });
+  };
+  try { cat = await (await fetch("../runs/freeruns/catalogue.json", { cache: "no-store" })).json(); } catch (e) { cat = []; }
+  buildCatalogue();
+  document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => setTab(b.dataset.t, true));
+  setTab(tab, false);
+  if (tab === "free") $("cam").value = "follow";
+  const want = new URLSearchParams(location.search).get("r");
+  let k = index.findIndex(x => x.path === want || x.name === want);
+  if (k < 0 && tab === "free" && cat.length) k = index.findIndex(x => x.path === cat[0].path);
+  if (index.length) select(Math.max(0, k));
+}
+function buildCatalogue() {
+  const L = $("catlist"); L.innerHTML = "";
+  const intro = document.createElement("div"); intro.className = "catintro";
+  intro.textContent = "Non-periodic splitruns (at least 20 s). Every split has a purpose; downtime = time between split presses. " +
+    "Counts are measured from the replay, not taken from the planner.";
+  L.appendChild(intro);
+  let group = null;
+  cat.forEach(c => {
+    const i = index.findIndex(x => x.path === c.path);
+    if (i < 0) return;
+    if (c.group && c.group !== group) {
+      group = c.group;
+      const h = document.createElement("div"); h.className = "catintro";
+      h.style.cssText = "font-weight:700;color:var(--ink);background:#f7f9fb;padding:6px 14px";
+      h.textContent = group; L.appendChild(h);
+    }
+    const d = document.createElement("div"); d.className = "item"; d.dataset.i = i;
+    const chip = (t, key) => `<span class="chip${key ? " key" : ""}">${t}</span>`;
+    d.innerHTML = `<div class="n">${c.title}</div><div class="m">${c.blurb}</div><div class="chips">` +
+      chip(`${c.seconds.toFixed(1)} s`, 1) + chip(`gap ${c.mean_gap_s.toFixed(2)} s avg`, 1) + chip(`max ${c.max_gap_s.toFixed(2)} s`) +
+      chip(`${c.presses} splits`) + (c.off_circle ? chip(`${c.off_circle} off-circle`) : "") + (c.doubles ? chip(`${c.doubles} double`) : "") +
+      (c.between ? chip(`${c.between} between`) : "") + (c.both ? chip(`${c.both} simultaneous`) : "") +
+      (c.triples ? chip(`${c.triples} triple`) : "") + (c.crossing ? chip(`${c.crossing} crossing`) : "") +
+      (c.flythrough ? chip(`${c.flythrough} fly-through`) : "") + (c.autosplits ? chip(`${c.autosplits} autosplits`) : "") +
+      (c.straight_triples ? chip(`${c.straight_triples} straight triple`, 1) : "") + `</div>`;
+    d.onclick = () => { $("cam").value = "follow"; select(i); };
+    L.appendChild(d);
+  });
+}
+function setTab(t, pick) {
+  tab = t;
+  document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("on", b.dataset.t === t));
+  $("list").style.display = t === "all" ? "" : "none";
+  $("filter").style.display = t === "all" ? "" : "none";
+  $("catlist").style.display = t === "free" ? "" : "none";
+  $("livepanel").style.display = t === "live" ? "" : "none";
+  if (t === "live") { $("cam").value = "follow"; startLive(); return; }
+  const wasLive = !!live; stopLive();
+  if ((pick || wasLive) && t === "all" && index.length) select(0);
+  if (pick && t === "free" && cat.length) { $("cam").value = "follow"; select(index.findIndex(x => x.path === cat[0].path)); }
+}
+
+// ---- steering the moving live controller: click the map (destination) or arrow keys / WASD (direction) ----
+let steerWp = null;
+const steerable = () => tab === "live" && liveMode === "live_dynamic";
+async function steerTo(x, y) {
+  steerWp = [x, y];
+  try { await fetch("/api/steer", { method: "POST", body: JSON.stringify({ stream: "live_dynamic", x, y }) }); } catch (e) {}
+  draw();
+}
+cv.addEventListener("click", e => {
+  if (!steerable() || !cam) return;
+  const r = cv.getBoundingClientRect(), W = cv.clientWidth, H = cv.clientHeight, s = Math.min(W / cam.w, H / cam.h);
+  steerTo(cam.x + (e.clientX - r.left - W / 2) / s, cam.y + (e.clientY - r.top - H / 2) / s);
+});
+function steerKey(code) {
+  const dirs = { ArrowUp: [0, -1], KeyW: [0, -1], ArrowDown: [0, 1], KeyS: [0, 1], ArrowLeft: [-1, 0], KeyA: [-1, 0], ArrowRight: [1, 0], KeyD: [1, 0] };
+  const d = dirs[code]; if (!d || !rep) return false;
+  const c = com[tick] || [0, 0];
+  steerTo(c[0] + d[0] * 6000, c[1] + d[1] * 6000);
+  return true;
+}
+
+// ---- live controller stream (runs/live/live.json, rewritten ~2x per second by tools/live_controller.py) ----
+let live = null, liveTimer = null, liveBase = 0, liveRun = -1, liveMode = new URLSearchParams(location.search).get("live") || "live";
+const LIVE_MODES = { live: "Stationary", live_dynamic: "Moving", live_feeding: "Feeding" };
+const LIVE_DELAY = 125;         // play ~5 s behind the controller frontier (absorbs planning pauses)
+function stopLive() { if (liveTimer) clearInterval(liveTimer); liveTimer = null; live = null; }
+function startLive() {
+  stopLive(); liveRun = -1;
+  const poll = async () => {
+    let d;
+    const sel = `<div id="livesel" style="display:flex;gap:4px;margin-bottom:10px">` + Object.entries(LIVE_MODES).map(([k, v]) =>
+      `<button data-m="${k}" style="flex:1;font:inherit;padding:4px;border:1px solid var(--line);border-radius:5px;background:${k === liveMode ? "#e8f1fd" : "#fff"};cursor:pointer">${v}</button>`).join("") + `</div>`;
+    const wire = () => document.querySelectorAll("#livesel button").forEach(b => b.onclick = () => { liveMode = b.dataset.m; liveRun = -1; startLive(); });
+    try { d = await (await fetch(`../runs/${liveMode}/live.json`, { cache: "no-store" })).json(); } catch (e) {
+      const flag = { live: "", live_dynamic: " --mode dynamic --out runs/live_dynamic", live_feeding: " --mode feeding --out runs/live_feeding" }[liveMode];
+      $("livepanel").innerHTML = sel + `Waiting for the controller… start it with <code>python tools/live_controller.py${flag}</code>`; wire(); return; }
+    const abs = rep && live ? liveBase + tick : 0;
+    const newRun = d.run_id !== liveRun;
+    live = d; liveBase = d.base_tick;
+    rep = { name: "live", tick_rate: d.tick_rate, map: d.map, frames: d.frames,
+            inputs: d.inputs.slice(d.base_tick - d.input_base), events: d.events.map(e => [e[0] - d.base_tick, ...e.slice(1)]),
+            description: `Live controller (${LIVE_MODES[liveMode]}) — run ${d.run_id}. ` +
+                         ({ live: "Stationary splitrun. ", live_dynamic: "The pair splitruns towards the destination you click (or arrow keys / WASD), as fast as it can while keeping every split purposeful; it holds position once there. ",
+                            live_feeding: "Tours the map on a loop eating the green neutral balls; restarts at 60k combined mass. " }[liveMode] || "") +
+                         `Receding-horizon beam search over designed moves; restarts automatically when it cannot continue.` };
+    com = rep.frames.map(f => { let m = 0, x = 0, y = 0; for (const c of f) { if (c[1] > 1) continue; const w = c[4] * c[4]; m += w; x += c[2] * w; y += c[3] * w; } return m ? [x / m, y / m] : null; });
+    $("desc").textContent = rep.description;
+    $("scrub").max = rep.frames.length - 1;
+    if (newRun) { liveRun = d.run_id; tick = 0; animTick = -1; cam = null; }
+    else tick = Math.max(0, Math.min(abs - liveBase, rep.frames.length - 1));
+    // keep the playhead near (frontier - delay): catch up if far behind
+    const head = rep.frames.length - 1;
+    if (head - tick > LIVE_DELAY + 250) { tick = Math.max(0, head - LIVE_DELAY); animTick = -1; }
+    playing = true; $("play").textContent = "❚❚ Pause";
+    const runs = d.runs || [], best = runs.reduce((a, r) => Math.max(a, r.seconds), 0);
+    const stale = Date.now() / 1000 - d.updated > 15;
+    const steerHint = liveMode === "live_dynamic" ? `<div style="margin:8px 0;padding:6px 8px;background:#f5f8fc;border-radius:5px">` +
+      `<b>Steer it:</b> click anywhere on the map, or use the arrow keys / WASD.` +
+      (d.speed ? ` Speed: <b>${d.speed.toFixed(0)}</b> units/s.` : "") + `</div>` : "";
+    $("livepanel").innerHTML = sel + steerHint + `<div><span class="dot" style="${stale ? "background:#c0392b;animation:none" : ""}"></span>run ${d.run_id} ${stale ? "(controller not running)" : "running"}</div>` +
+      (d.mode === "feeding" ? `<div style="margin-top:4px">mass <b>${(d.mass || 0).toLocaleString()}</b> / 60,000 (resets at 60k)</div>` : "") +
+      `<div class="big">${(d.running_s).toFixed(1)} s</div><div style="color:var(--muted)">controller frontier (you are watching ~${(LIVE_DELAY / 25).toFixed(0)} s behind)</div>` +
+      `<div style="margin-top:12px"><b>Finished runs</b> — ${runs.length} so far, longest ${best.toFixed(1)} s</div>` +
+      `<div class="runs">${runs.slice().reverse().map(r => `<span class="bar ${r.seconds >= 60 ? "long" : ""}" title="${r.ended}">#${r.run} ${r.seconds.toFixed(0)} s</span>`).join("")}</div>`;
+    wire();
+    draw();
+  };
+  poll(); liveTimer = setInterval(poll, 1000);
+}
+async function fetchRep(i) { return await (await fetch("../runs/" + index[i].path, { cache: "no-store" })).json(); }
+async function select(i) {
+  if (tab === "live") return;
+  document.querySelectorAll(".item").forEach(e => e.classList.toggle("sel", +e.dataset.i === i));
+  rep = await fetchRep(i);
+  $("desc").textContent = rep.description || rep.name;
+  $("scrub").max = rep.frames.length - 1; tick = 0; playing = true; $("play").textContent = "❚❚ Pause"; animTick = -1;
+  com = rep.frames.map(f => { let m = 0, x = 0, y = 0; for (const c of f) { if (c[1] > 1) continue; const w = c[4] * c[4]; m += w; x += c[2] * w; y += c[3] * w; } return m ? [x / m, y / m] : null; });
+  cam = fixedCam(); history.replaceState(null, "", "?tab=" + tab + "&r=" + encodeURIComponent(index[i].path));
+  draw();
+}
+function fixedCam() {
+  let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+  for (const f of rep.frames) for (const c of f) { x0 = Math.min(x0, c[2] - c[4]); x1 = Math.max(x1, c[2] + c[4]); y0 = Math.min(y0, c[3] - c[4]); y1 = Math.max(y1, c[3] + c[4]); }
+  return { x: (x0 + x1) / 2, y: (y0 + y1) / 2, w: (x1 - x0) * 1.08, h: (y1 - y0) * 1.08 };
+}
+let camT = 0;
+function followCam(f) {
+  // calm camera: pans with a ~0.4 s time constant, zooms with ~1.5 s, and only re-zooms when the view is
+  // clearly too tight (< 1.15x the pieces' extent) or too loose (> 1.9x); the tightest view scales with
+  // sqrt(total mass) (3,500 units at 37k), so small-mass runs are shown as large as big ones
+  const now = performance.now(), dt = camT ? Math.min(0.1, (now - camT) / 1000) : 1; camT = now;
+  let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9, m = 0, cx = 0, cy = 0;
+  for (const c of f) {
+    if (c[1] > 1) continue;                    // neutral balls do not steer the camera
+    x0 = Math.min(x0, c[2] - c[4]); x1 = Math.max(x1, c[2] + c[4]); y0 = Math.min(y0, c[3] - c[4]); y1 = Math.max(y1, c[3] + c[4]);
+    const w = c[4] * c[4]; m += w; cx += c[2] * w; cy += c[3] * w; }
+  const ext = Math.max(x1 - x0, y1 - y0, Math.max(1100, 3500 * Math.sqrt(m / 100 / 37000)));
+  const t = { x: (x0 + x1) / 2 * 0.8 + cx / m * 0.2, y: (y0 + y1) / 2 * 0.8 + cy / m * 0.2 };
+  if (!cam || cam.fixed || !cam.follow) return { x: t.x, y: t.y, w: ext * 1.45, h: ext * 1.45, follow: true, want: ext * 1.45 };
+  let want = cam.want;
+  if (cam.w < ext * 1.15 || cam.w > ext * 1.9) want = ext * 1.45;
+  const kp = 1 - Math.exp(-dt / 0.4), kz = 1 - Math.exp(-dt / (cam.w < ext * 1.05 ? 0.35 : 1.5));
+  const w = cam.w + (want - cam.w) * kz;
+  return { x: cam.x + (t.x - cam.x) * kp, y: cam.y + (t.y - cam.y) * kp, w, h: w, follow: true, want };
+}
+// ---- neutral balls: a stable random colour + a simple procedural "skin" per ball ----
+const hashId = id => { let h = (id * 2654435761) >>> 0; h ^= h >>> 15; h = Math.imul(h, 2246822519) >>> 0; h ^= h >>> 13; return h >>> 0; };
+function ballColour(id) {
+  const h = hashId(id), hue = h % 360, sat = 55 + (h >> 9) % 35, lig = 48 + (h >> 17) % 14;
+  return [`hsl(${hue} ${sat}% ${lig}%)`, `hsl(${hue} ${sat}% ${lig - 8}%)`];
+}
+function drawSkin(id, X, Y, R) {
+  const h = hashId(id + 7919), kind = h % 8, hue2 = (h >> 5) % 360;
+  if (kind === 0) return;                                            // plain
+  ctx.save(); ctx.beginPath(); ctx.arc(X, Y, R, 0, 7); ctx.clip();
+  ctx.fillStyle = ctx.strokeStyle = `hsla(${hue2} 80% ${kind % 2 ? 85 : 25}% / .55)`; ctx.lineWidth = Math.max(1, R * 0.12);
+  if (kind === 1) { for (let q = 0.3; q < 1; q += 0.3) { ctx.beginPath(); ctx.arc(X, Y, R * q, 0, 7); ctx.stroke(); } }         // rings
+  else if (kind === 2) { for (let q = -1; q <= 1; q += 0.4) { ctx.fillRect(X + q * R - R * 0.1, Y - R, R * 0.2, 2 * R); } }  // stripes
+  else if (kind === 3) { for (let a = 0; a < 6; a++) { ctx.beginPath(); ctx.arc(X + Math.cos(a) * R * 0.55, Y + Math.sin(a) * R * 0.55, R * 0.16, 0, 7); ctx.fill(); } } // dots
+  else if (kind === 4) { ctx.beginPath(); for (let a = 0; a < 10; a++) { const rr = a % 2 ? R * 0.35 : R * 0.8, t = a * Math.PI / 5 - Math.PI / 2;
+      ctx.lineTo(X + Math.cos(t) * rr, Y + Math.sin(t) * rr); } ctx.closePath(); ctx.fill(); }                                   // star
+  else if (kind === 5) { ctx.beginPath(); for (let t = 0; t < 14; t += 0.2) ctx.lineTo(X + Math.cos(t) * R * t / 14, Y + Math.sin(t) * R * t / 14); ctx.stroke(); } // spiral
+  else if (kind === 6) { const k = R / 2; for (let i = -2; i < 2; i++) for (let j = -2; j < 2; j++) if ((i + j) & 1) ctx.fillRect(X + i * k, Y + j * k, k, k); } // checker
+  else { ctx.beginPath(); ctx.arc(X, Y, R, -Math.PI / 2, Math.PI / 2); ctx.fill(); }                                             // two-tone
+  ctx.restore();
+}
+
+// ---- client-side animation (display only; the replay data is untouched) ----
+// Like the agar.io / Ogar clients: on every server update a piece keeps where it is DRAWN as its start
+// and eases to the new server position and size over ~120 ms (3 ticks at 25 Hz); a piece that
+// disappears (eaten or merged) slides into the piece that swallowed it and fades under it.
+let anim = new Map(), animTick = -1;
+const animMs = () => Math.min(160, Math.max(30, 3 * 1000 / ((rep.tick_rate || 25) * +$("speed").value)));
+const ease = k => 1 - (1 - k) * (1 - k);
+function drawn(e, now) {
+  const k = ease(Math.min(1, Math.max(0, (now - e.t0) / animMs())));
+  return [e.ox + (e.nx - e.ox) * k, e.oy + (e.ny - e.oy) * k, e.or + (e.nr - e.or) * k, k];
+}
+function resetAnim(now) {
+  anim = new Map();
+  for (const c of rep.frames[tick]) anim.set(c[0], { o: c[1], fl: c[5], ox: c[2], oy: c[3], or: c[4], nx: c[2], ny: c[3], nr: c[4], t0: now, dead: false });
+  animTick = tick;
+}
+function syncAnim(now) {
+  if (animTick === tick) return;
+  if (animTick < 0 || Math.abs(tick - animTick) > 3 || tick < animTick) { resetAnim(now); return; }
+  const f = rep.frames[tick], seen = new Set();
+  for (const c of f) {
+    seen.add(c[0]);
+    const e = anim.get(c[0]);
+    if (e && !e.dead) {
+      const [x, y, r] = drawn(e, now);
+      Object.assign(e, { o: c[1], fl: c[5], ox: x, oy: y, or: r, nx: c[2], ny: c[3], nr: c[4], t0: now });
+    } else {
+      anim.set(c[0], { o: c[1], fl: c[5], ox: c[2], oy: c[3], or: c[4], nx: c[2], ny: c[3], nr: c[4], t0: now, dead: false });
+    }
+  }
+  for (const [id, e] of anim) {
+    if (seen.has(id) || e.dead) continue;
+    const [x, y, r] = drawn(e, now);
+    // who swallowed it: the biggest piece now covering it (else the nearest bigger one)
+    let best = null, bd = 1e18;
+    for (const c of f) {
+      if (c[4] <= r) continue;
+      const d = Math.hypot(c[2] - x, c[3] - y), score = d < c[4] ? -c[4] : d;
+      if (score < bd) { bd = score; best = c; }
+    }
+    Object.assign(e, { ox: x, oy: y, or: r, nx: best ? best[2] : x, ny: best ? best[3] : y, nr: r * 0.6, t0: now, dead: true });
+  }
+  animTick = tick;
+}
+function animCells(now) {
+  const out = [];
+  for (const [id, e] of anim) {
+    const [x, y, r, k] = drawn(e, now);
+    if (e.dead && k >= 1) { anim.delete(id); continue; }
+    out.push([id, e.o, x, y, r, e.fl, e.dead]);
+  }
+  return out;
+}
+const animating = now => { for (const e of anim.values()) if (now - e.t0 < animMs()) return true; return false; };
+
+function draw() {
+  if (!rep) return;
+  const dpr = window.devicePixelRatio || 1, W = cv.clientWidth, H = cv.clientHeight;
+  if (cv.width !== W * dpr || cv.height !== H * dpr) { cv.width = W * dpr; cv.height = H * dpr; }
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const f = rep.frames[tick];
+  if ($("cam").value === "follow") cam = followCam(f); else if (!cam || cam.follow) { cam = fixedCam(); cam.follow = false; }
+  const s = Math.min(W / cam.w, H / cam.h), tx = x => W / 2 + (x - cam.x) * s, ty = y => H / 2 + (y - cam.y) * s;
+  ctx.fillStyle = css("--bg"); ctx.fillRect(0, 0, W, H);
+  // world + grid
+  const [mx, my, mw, mh] = rep.map;
+  ctx.fillStyle = css("--world"); ctx.fillRect(tx(mx - mw), ty(my - mh), 2 * mw * s, 2 * mh * s);
+  // imsolo-style grid: black lines at 20% opacity every 50 world units, thinned so lines stay >= 9 px apart
+  let step = 50; while (step * s < 9) step *= 2;
+  ctx.save(); ctx.globalAlpha = step === 50 ? 0.2 : 0.14; ctx.strokeStyle = css("--grid"); ctx.lineWidth = 1; ctx.beginPath();
+  for (let gx = Math.ceil((cam.x - W / 2 / s) / step) * step; gx < cam.x + W / 2 / s; gx += step) { const X = Math.round(tx(gx)) + 0.5; ctx.moveTo(X, 0); ctx.lineTo(X, H); }
+  for (let gy = Math.ceil((cam.y - H / 2 / s) / step) * step; gy < cam.y + H / 2 / s; gy += step) { const Y = Math.round(ty(gy)) + 0.5; ctx.moveTo(0, Y); ctx.lineTo(W, Y); }
+  ctx.stroke(); ctx.restore();
+  ctx.strokeStyle = "#9aa4b1"; ctx.lineWidth = 2; ctx.strokeRect(tx(mx - mw), ty(my - mh), 2 * mw * s, 2 * mh * s);
+  // centre-of-mass trail (stationarity)
+  if ($("trail").checked && com[0]) {
+    ctx.strokeStyle = "rgba(60,60,60,.45)"; ctx.lineWidth = 1.5; ctx.beginPath();
+    for (let t = 0; t <= tick; t++) if (com[t]) (t ? ctx.lineTo : ctx.moveTo).call(ctx, tx(com[t][0]), ty(com[t][1]));
+    ctx.stroke();
+    ctx.fillStyle = "#333"; ctx.beginPath(); ctx.arc(tx(com[0][0]), ty(com[0][1]), 4, 0, 7); ctx.fill();
+    if (com[tick]) { ctx.strokeStyle = "#333"; ctx.lineWidth = 2; const cx = tx(com[tick][0]), cy = ty(com[tick][1]);
+      ctx.beginPath(); ctx.moveTo(cx - 7, cy); ctx.lineTo(cx + 7, cy); ctx.moveTo(cx, cy - 7); ctx.lineTo(cx, cy + 7); ctx.stroke(); }
+  }
+  // cells: small first, so bigger blobs are drawn over (and smaller ones tuck behind) them, as in imsolo
+  const cols = COL();
+  const now = performance.now();
+  let cells;
+  if ($("smooth").checked) { syncAnim(now); cells = animCells(now); } else { animTick = -1; cells = [...f]; }
+  cells.sort((a, b) => (b[6] ? 1 : 0) - (a[6] ? 1 : 0) || a[4] - b[4]);    // swallowed pieces first (under), then small to big
+  // imsolo cell style: fill colour, border = colour * 0.9 of width max(size/50, 10) drawn inside the
+  // edge, white Ubuntu name with black stroke, mass underneath (starting at y + size/4)
+  for (const c of cells) {
+    const [id, o, x, y, r, fl, gone] = c;
+    let [fill, edge] = cols[o];
+    if (o === 2) [fill, edge] = ballColour(id);
+    const bw = Math.max(Math.floor(r / 50), 10), rr = r > 20 ? r - bw / 2 : r;
+    ctx.fillStyle = fill; ctx.strokeStyle = edge; ctx.lineWidth = bw * s;
+    ctx.beginPath(); ctx.arc(tx(x), ty(y), rr * s, 0, 7); ctx.fill(); ctx.stroke();
+    if (o === 2 && r * s > 4) drawSkin(id, tx(x), ty(y), rr * s);
+    if ($("marks").checked && fl & 1) { ctx.setLineDash([4, 4]); ctx.strokeStyle = "#fff"; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(tx(x), ty(y), r * s * 0.9, 0, 7); ctx.stroke(); ctx.setLineDash([]); }
+    if (r * s < 7) continue;
+    ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.lineJoin = "miter"; ctx.miterLimit = 2;
+    const nameFs = r * s * 0.34, massFs = r * s * 0.24;
+    const name = (o === 0 ? "A" : o === 1 ? "B" : "") + ($("ids").checked ? ` #${id}` : "");
+    const txt = (str, px, X, Y) => { if (px < 5) return; ctx.font = `700 ${px}px Ubuntu, system-ui`; ctx.lineWidth = Math.max(px / 10, 1.5);
+      ctx.strokeStyle = "#000"; ctx.strokeText(str, X, Y); ctx.fillStyle = "#fff"; ctx.fillText(str, X, Y); };
+    txt(name, nameFs, tx(x), ty(y));
+    txt(Math.floor(r * r / 100).toString(), massFs, tx(x), ty(y) + (r / 4) * s + massFs * 0.6);
+    if ($("marks").checked && fl & 2) txt("merge-ready", massFs * 0.6, tx(x), ty(y) - nameFs * 0.9);
+  }
+  // overlay replay drawn as outlines (e.g. real server vs simulator)
+  if (ov && ov.frames[tick]) {
+    ctx.setLineDash([6, 4]); ctx.lineWidth = 2; ctx.strokeStyle = "#111";
+    for (const c of ov.frames[tick]) { ctx.beginPath(); ctx.arc(tx(c[2]), ty(c[3]), c[4] * s, 0, 7); ctx.stroke(); }
+    ctx.setLineDash([]);
+  }
+  // destination of the moving live controller
+  const wp = steerable() ? (live && live.waypoint ? live.waypoint : steerWp) : null;
+  if (wp) {
+    const X = tx(wp[0]), Y = ty(wp[1]);
+    ctx.save(); ctx.strokeStyle = css("--accent"); ctx.lineWidth = 3; ctx.setLineDash([6, 4]);
+    ctx.beginPath(); ctx.arc(X, Y, 18, 0, 7); ctx.stroke(); ctx.setLineDash([]);
+    ctx.beginPath(); ctx.moveTo(X - 10, Y); ctx.lineTo(X + 10, Y); ctx.moveTo(X, Y - 10); ctx.lineTo(X, Y + 10); ctx.stroke();
+    if (com[tick]) { ctx.globalAlpha = 0.35; ctx.beginPath(); ctx.moveTo(tx(com[tick][0]), ty(com[tick][1])); ctx.lineTo(X, Y); ctx.stroke(); }
+    ctx.restore();
+  }
+  // cursors (what each player is aiming at this tick) + split presses
+  if ($("cursors").checked && rep.inputs && rep.inputs[tick - 1]) {
+    rep.inputs[tick - 1].forEach((inp, p) => {
+      const x = tx(inp[0]), y = ty(inp[1]); ctx.strokeStyle = cols[p][1]; ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.moveTo(x - 8, y - 8); ctx.lineTo(x + 8, y + 8); ctx.moveTo(x + 8, y - 8); ctx.lineTo(x - 8, y + 8); ctx.stroke();
+      if (inp[2] > 0) { ctx.font = "700 13px system-ui"; ctx.fillStyle = cols[p][1]; ctx.textAlign = "left"; ctx.fillText(inp[2] === 1 ? "SPLIT" : "DOUBLE SPLIT", x + 11, y - 10); }
+    });
+  }
+  hud(f);
+}
+function hud(f) {
+  const tr = rep.tick_rate || 25, cols = COL();
+  const per = [0, 1].map(p => { const cs = f.filter(c => c[1] === p); return { n: cs.length, m: cs.reduce((a, c) => a + c[4] * c[4] / 100, 0) }; });
+  let drift = "";
+  if (com[0] && com[tick]) drift = Math.hypot(com[tick][0] - com[0][0], com[tick][1] - com[0][1]).toFixed(0);
+  $("hud").innerHTML = ["A", "B"].map((nm, p) => `<div class="row"><span><span class="sw" style="background:${cols[p][0]}"></span>${nm}</span><span>${per[p].m.toLocaleString(undefined, { maximumFractionDigits: 0 })} mass · ${per[p].n} cells</span></div>`).join("")
+    + `<div class="row" style="color:var(--muted)"><span>centre drift</span><span>${drift} units</span></div>`;
+  $("time").textContent = `t = ${(tick / tr).toFixed(2)} s · tick ${tick} / ${rep.frames.length - 1}`;
+  $("scrub").value = tick;
+  const ev = (rep.events || []).filter(e => e[0] <= tick).slice(-14);
+  $("events").style.display = (rep.events && rep.events.length) ? "" : "none";
+  $("events").innerHTML = "<b>Eats</b>" + ev.map(e => {
+    const who = ["A", "B"];
+    const txt = e[4] === "merge" ? `${who[e[1]]} merged a ${fmt(e[3])} piece` : `${who[e[1]]} ate ${who[e[2]]}'s ${fmt(e[3])}`;
+    return `<div class="${e[4]} ${tick - e[0] > 50 ? "old" : ""}">${(e[0] / tr).toFixed(2)}s  ${txt}</div>`;
+  }).join("");
+}
+function loop(ts) {
+  if (playing && rep) {
+    acc += (ts - last) / 1000 * (rep.tick_rate || 25) * +$("speed").value;
+    while (acc >= 1) {
+      acc -= 1;
+      if (tick < rep.frames.length - 1) tick++;
+      else if (!live) { tick = 0; animTick = -1; cam = null; }       // recordings loop: restart immediately
+      else acc = 0;                                                  // live: wait for new frames
+    }
+    draw();
+  } else if (rep && $("smooth").checked && animating(performance.now())) draw();
+  last = ts; requestAnimationFrame(loop);
+}
+$("play").onclick = () => { if (tick >= rep.frames.length - 1) tick = 0; playing = !playing; $("play").textContent = playing ? "❚❚ Pause" : "▶ Play"; };
+$("back").onclick = () => { tick = Math.max(0, tick - 1); draw(); };
+$("fwd").onclick = () => { tick = Math.min(rep.frames.length - 1, tick + 1); draw(); };
+$("scrub").oninput = e => { tick = +e.target.value; draw(); };
+["cam", "cursors", "trail", "ids", "marks", "smooth"].forEach(k => $(k).onchange = () => { cam = null; draw(); });
+$("overlay").onchange = async e => { ov = e.target.value === "" ? null : await fetchRep(+e.target.value); draw(); };
+addEventListener("keydown", e => {
+  if (e.target.tagName === "SELECT") return;
+  if (e.code === "Space") { e.preventDefault(); $("play").click(); }
+  if (steerable() && steerKey(e.code)) { e.preventDefault(); return; }
+  if (e.code === "ArrowLeft") $("back").click();
+  if (e.code === "ArrowRight") $("fwd").click();
+});
+addEventListener("resize", draw);
+loadIndex(); requestAnimationFrame(loop);
+</script>
+</body>
+</html>

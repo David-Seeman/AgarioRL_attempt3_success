@@ -1,0 +1,4 @@
+   medium_triples: 7.8 s, 20 events, best score 169 (34s)
+   medium_triples: 16.2 s, 40 events, best score 312 (83s)
+   medium_triples: 25.0 s, 60 events, best score 466 (133s)
+medium_triples: 30.0 s, died=False, 73 presses, mean gap 10.2 ticks, max 17, moves {'cross': 27, 'trim': 14, 'double': 17, 'between': 4, 'circle': 5, 'triple': 6} (155s)

@@ -1,0 +1,6 @@
+   large_45k: all branches died at event 2; back 1 events (backtrack 1)
+   large_45k: all branches died at event 4; back 1 events (backtrack 2)
+   large_45k: 6.7 s, 16 events, best score 60 (24s)
+   large_45k: 15.2 s, 36 events, best score -2 (64s)
+   large_45k: 24.9 s, 56 events, best score -69 (108s)
+large_45k: 30.8 s, died=False, 68 presses, mean gap 11.2 ticks, max 17, moves {'cross': 3, 'trim': 13, 'circle': 17, 'between': 16, 'double': 15, 'push': 4} (135s)

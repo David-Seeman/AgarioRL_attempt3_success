@@ -1,0 +1,87 @@
+{
+ "name": "test",
+ "ticks": 75,
+ "seconds": 3.0,
+ "reason": "one player drained",
+ "splits": [
+  {
+   "tick": 1,
+   "player": 0,
+   "kind": 2,
+   "phi": 42.6
+  },
+  {
+   "tick": 18,
+   "player": 0,
+   "kind": 2,
+   "phi": -74.3
+  },
+  {
+   "tick": 18,
+   "player": 1,
+   "kind": 2,
+   "phi": -74.3
+  },
+  {
+   "tick": 27,
+   "player": 1,
+   "kind": 1,
+   "phi": -63.7
+  },
+  {
+   "tick": 32,
+   "player": 0,
+   "kind": 2,
+   "phi": 23.6
+  },
+  {
+   "tick": 35,
+   "player": 0,
+   "kind": 1,
+   "phi": -82.3
+  },
+  {
+   "tick": 38,
+   "player": 0,
+   "kind": 2,
+   "phi": -1.8
+  },
+  {
+   "tick": 45,
+   "player": 1,
+   "kind": 2,
+   "phi": 39.3
+  },
+  {
+   "tick": 60,
+   "player": 0,
+   "kind": 2,
+   "phi": -21.6
+  },
+  {
+   "tick": 69,
+   "player": 0,
+   "kind": 1,
+   "phi": 5.6
+  },
+  {
+   "tick": 70,
+   "player": 0,
+   "kind": 2,
+   "phi": 70.6
+  },
+  {
+   "tick": 71,
+   "player": 0,
+   "kind": 2,
+   "phi": -18.0
+  }
+ ],
+ "eats": 19,
+ "start": [
+  18500,
+  18500
+ ],
+ "style": {},
+ "compute_s": 6
+}

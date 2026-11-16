@@ -1,0 +1,4 @@
+   striple_s44: 7.4 s, 20 events, best score 171 (19s)
+   striple_s44: 17.1 s, 40 events, best score 314 (48s)
+   striple_s44: 27.0 s, 60 events, best score 472 (77s)
+striple_s44: 30.7 s, died=False, 68 presses, mean gap 11.2 ticks, max 17, moves {'striple': 1, 'double': 28, 'circle': 13, 'triple': 2, 'trim': 2, 'cross': 15, 'flythrough': 2, 'between': 2, 'push': 3} (89s)

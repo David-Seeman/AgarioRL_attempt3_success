@@ -1,0 +1,615 @@
+{
+ "name": "test_t0_0",
+ "ticks": 750,
+ "seconds": 30.0,
+ "reason": "time limit",
+ "splits": [
+  {
+   "tick": 5,
+   "player": 0,
+   "kind": 2,
+   "phi": 17.7
+  },
+  {
+   "tick": 5,
+   "player": 1,
+   "kind": 2,
+   "phi": 17.7
+  },
+  {
+   "tick": 26,
+   "player": 0,
+   "kind": 1,
+   "phi": 40.2
+  },
+  {
+   "tick": 26,
+   "player": 1,
+   "kind": 1,
+   "phi": 40.2
+  },
+  {
+   "tick": 46,
+   "player": 0,
+   "kind": 2,
+   "phi": 148.6
+  },
+  {
+   "tick": 46,
+   "player": 1,
+   "kind": 2,
+   "phi": 148.6
+  },
+  {
+   "tick": 67,
+   "player": 0,
+   "kind": 2,
+   "phi": 8.6
+  },
+  {
+   "tick": 67,
+   "player": 1,
+   "kind": 2,
+   "phi": 8.6
+  },
+  {
+   "tick": 84,
+   "player": 0,
+   "kind": 1,
+   "phi": 111.7
+  },
+  {
+   "tick": 84,
+   "player": 1,
+   "kind": 1,
+   "phi": 111.7
+  },
+  {
+   "tick": 101,
+   "player": 0,
+   "kind": 1,
+   "phi": 81.6
+  },
+  {
+   "tick": 101,
+   "player": 1,
+   "kind": 1,
+   "phi": 81.6
+  },
+  {
+   "tick": 122,
+   "player": 0,
+   "kind": 2,
+   "phi": 11.9
+  },
+  {
+   "tick": 122,
+   "player": 1,
+   "kind": 2,
+   "phi": 11.9
+  },
+  {
+   "tick": 127,
+   "player": 0,
+   "kind": 1,
+   "phi": 34.4
+  },
+  {
+   "tick": 127,
+   "player": 1,
+   "kind": 1,
+   "phi": 34.4
+  },
+  {
+   "tick": 132,
+   "player": 0,
+   "kind": 2,
+   "phi": -15.1
+  },
+  {
+   "tick": 135,
+   "player": 0,
+   "kind": 2,
+   "phi": -44.0
+  },
+  {
+   "tick": 153,
+   "player": 0,
+   "kind": 1,
+   "phi": 14.0
+  },
+  {
+   "tick": 153,
+   "player": 1,
+   "kind": 1,
+   "phi": 14.0
+  },
+  {
+   "tick": 170,
+   "player": 0,
+   "kind": 2,
+   "phi": 30.4
+  },
+  {
+   "tick": 170,
+   "player": 1,
+   "kind": 2,
+   "phi": 30.4
+  },
+  {
+   "tick": 181,
+   "player": 1,
+   "kind": 2,
+   "phi": 133.1
+  },
+  {
+   "tick": 195,
+   "player": 0,
+   "kind": 1,
+   "phi": -27.0
+  },
+  {
+   "tick": 198,
+   "player": 0,
+   "kind": 2,
+   "phi": 110.9
+  },
+  {
+   "tick": 215,
+   "player": 0,
+   "kind": 1,
+   "phi": 38.6
+  },
+  {
+   "tick": 215,
+   "player": 1,
+   "kind": 1,
+   "phi": 38.6
+  },
+  {
+   "tick": 220,
+   "player": 0,
+   "kind": 2,
+   "phi": 65.0
+  },
+  {
+   "tick": 225,
+   "player": 0,
+   "kind": 2,
+   "phi": 90.6
+  },
+  {
+   "tick": 243,
+   "player": 0,
+   "kind": 2,
+   "phi": 44.6
+  },
+  {
+   "tick": 243,
+   "player": 1,
+   "kind": 2,
+   "phi": 44.6
+  },
+  {
+   "tick": 262,
+   "player": 0,
+   "kind": 2,
+   "phi": 34.5
+  },
+  {
+   "tick": 262,
+   "player": 1,
+   "kind": 2,
+   "phi": 34.5
+  },
+  {
+   "tick": 280,
+   "player": 0,
+   "kind": 1,
+   "phi": 44.0
+  },
+  {
+   "tick": 280,
+   "player": 1,
+   "kind": 1,
+   "phi": 44.0
+  },
+  {
+   "tick": 297,
+   "player": 0,
+   "kind": 2,
+   "phi": 28.2
+  },
+  {
+   "tick": 297,
+   "player": 1,
+   "kind": 2,
+   "phi": 28.2
+  },
+  {
+   "tick": 314,
+   "player": 0,
+   "kind": 1,
+   "phi": -3.7
+  },
+  {
+   "tick": 314,
+   "player": 1,
+   "kind": 1,
+   "phi": -3.7
+  },
+  {
+   "tick": 326,
+   "player": 0,
+   "kind": 2,
+   "phi": -16.3
+  },
+  {
+   "tick": 326,
+   "player": 1,
+   "kind": 2,
+   "phi": -16.3
+  },
+  {
+   "tick": 335,
+   "player": 0,
+   "kind": 1,
+   "phi": 127.9
+  },
+  {
+   "tick": 335,
+   "player": 1,
+   "kind": 1,
+   "phi": 127.9
+  },
+  {
+   "tick": 352,
+   "player": 0,
+   "kind": 2,
+   "phi": 39.1
+  },
+  {
+   "tick": 352,
+   "player": 1,
+   "kind": 2,
+   "phi": 39.1
+  },
+  {
+   "tick": 369,
+   "player": 0,
+   "kind": 2,
+   "phi": 39.3
+  },
+  {
+   "tick": 369,
+   "player": 1,
+   "kind": 2,
+   "phi": 39.3
+  },
+  {
+   "tick": 372,
+   "player": 0,
+   "kind": 2,
+   "phi": -38.0
+  },
+  {
+   "tick": 393,
+   "player": 0,
+   "kind": 1,
+   "phi": 37.4
+  },
+  {
+   "tick": 393,
+   "player": 1,
+   "kind": 1,
+   "phi": 37.4
+  },
+  {
+   "tick": 394,
+   "player": 0,
+   "kind": 2,
+   "phi": -30.9
+  },
+  {
+   "tick": 394,
+   "player": 1,
+   "kind": 2,
+   "phi": -30.9
+  },
+  {
+   "tick": 407,
+   "player": 0,
+   "kind": 1,
+   "phi": 8.1
+  },
+  {
+   "tick": 407,
+   "player": 1,
+   "kind": 1,
+   "phi": 8.1
+  },
+  {
+   "tick": 422,
+   "player": 0,
+   "kind": 2,
+   "phi": 52.8
+  },
+  {
+   "tick": 422,
+   "player": 1,
+   "kind": 2,
+   "phi": 52.8
+  },
+  {
+   "tick": 440,
+   "player": 0,
+   "kind": 2,
+   "phi": 50.8
+  },
+  {
+   "tick": 440,
+   "player": 1,
+   "kind": 2,
+   "phi": 50.8
+  },
+  {
+   "tick": 447,
+   "player": 1,
+   "kind": 1,
+   "phi": -42.3
+  },
+  {
+   "tick": 460,
+   "player": 1,
+   "kind": 1,
+   "phi": -42.1
+  },
+  {
+   "tick": 470,
+   "player": 0,
+   "kind": 1,
+   "phi": 36.9
+  },
+  {
+   "tick": 470,
+   "player": 1,
+   "kind": 1,
+   "phi": 36.9
+  },
+  {
+   "tick": 481,
+   "player": 0,
+   "kind": 1,
+   "phi": 50.6
+  },
+  {
+   "tick": 488,
+   "player": 0,
+   "kind": 1,
+   "phi": 13.6
+  },
+  {
+   "tick": 488,
+   "player": 1,
+   "kind": 1,
+   "phi": 13.6
+  },
+  {
+   "tick": 502,
+   "player": 0,
+   "kind": 1,
+   "phi": -81.9
+  },
+  {
+   "tick": 520,
+   "player": 0,
+   "kind": 1,
+   "phi": 129.0
+  },
+  {
+   "tick": 520,
+   "player": 1,
+   "kind": 1,
+   "phi": 129.0
+  },
+  {
+   "tick": 541,
+   "player": 0,
+   "kind": 2,
+   "phi": 6.6
+  },
+  {
+   "tick": 541,
+   "player": 1,
+   "kind": 2,
+   "phi": 6.6
+  },
+  {
+   "tick": 560,
+   "player": 0,
+   "kind": 1,
+   "phi": 47.8
+  },
+  {
+   "tick": 560,
+   "player": 1,
+   "kind": 1,
+   "phi": 47.8
+  },
+  {
+   "tick": 561,
+   "player": 1,
+   "kind": 1,
+   "phi": -174.3
+  },
+  {
+   "tick": 562,
+   "player": 1,
+   "kind": 1,
+   "phi": -174.3
+  },
+  {
+   "tick": 583,
+   "player": 0,
+   "kind": 1,
+   "phi": 44.6
+  },
+  {
+   "tick": 583,
+   "player": 1,
+   "kind": 1,
+   "phi": 44.6
+  },
+  {
+   "tick": 592,
+   "player": 0,
+   "kind": 2,
+   "phi": 18.0
+  },
+  {
+   "tick": 592,
+   "player": 1,
+   "kind": 2,
+   "phi": 18.0
+  },
+  {
+   "tick": 613,
+   "player": 0,
+   "kind": 2,
+   "phi": 18.2
+  },
+  {
+   "tick": 613,
+   "player": 1,
+   "kind": 2,
+   "phi": 18.2
+  },
+  {
+   "tick": 630,
+   "player": 0,
+   "kind": 1,
+   "phi": 75.9
+  },
+  {
+   "tick": 630,
+   "player": 1,
+   "kind": 1,
+   "phi": 75.9
+  },
+  {
+   "tick": 634,
+   "player": 0,
+   "kind": 1,
+   "phi": -60.1
+  },
+  {
+   "tick": 635,
+   "player": 1,
+   "kind": 2,
+   "phi": 10.7
+  },
+  {
+   "tick": 638,
+   "player": 0,
+   "kind": 1,
+   "phi": 52.3
+  },
+  {
+   "tick": 638,
+   "player": 1,
+   "kind": 1,
+   "phi": 52.3
+  },
+  {
+   "tick": 658,
+   "player": 0,
+   "kind": 2,
+   "phi": 46.4
+  },
+  {
+   "tick": 658,
+   "player": 1,
+   "kind": 2,
+   "phi": 46.4
+  },
+  {
+   "tick": 675,
+   "player": 0,
+   "kind": 2,
+   "phi": 33.5
+  },
+  {
+   "tick": 675,
+   "player": 1,
+   "kind": 2,
+   "phi": 33.5
+  },
+  {
+   "tick": 696,
+   "player": 0,
+   "kind": 1,
+   "phi": 26.3
+  },
+  {
+   "tick": 696,
+   "player": 1,
+   "kind": 1,
+   "phi": 26.3
+  },
+  {
+   "tick": 714,
+   "player": 0,
+   "kind": 2,
+   "phi": 40.2
+  },
+  {
+   "tick": 714,
+   "player": 1,
+   "kind": 2,
+   "phi": 40.2
+  },
+  {
+   "tick": 722,
+   "player": 0,
+   "kind": 2,
+   "phi": 115.6
+  },
+  {
+   "tick": 722,
+   "player": 1,
+   "kind": 2,
+   "phi": 115.6
+  },
+  {
+   "tick": 728,
+   "player": 0,
+   "kind": 1,
+   "phi": -19.5
+  },
+  {
+   "tick": 745,
+   "player": 0,
+   "kind": 1,
+   "phi": 23.6
+  },
+  {
+   "tick": 745,
+   "player": 1,
+   "kind": 1,
+   "phi": 23.6
+  },
+  {
+   "tick": 747,
+   "player": 1,
+   "kind": 1,
+   "phi": 21.9
+  }
+ ],
+ "eats": 662,
+ "start": [
+  18500.081919999997,
+  18500.020897
+ ],
+ "style": {},
+ "compute_s": 39
+}

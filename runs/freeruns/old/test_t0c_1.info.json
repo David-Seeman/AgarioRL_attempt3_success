@@ -1,0 +1,237 @@
+{
+ "name": "test_t0c_1",
+ "ticks": 180,
+ "seconds": 7.2,
+ "reason": "one player drained",
+ "splits": [
+  {
+   "tick": 1,
+   "player": 0,
+   "kind": 1,
+   "phi": 11.4
+  },
+  {
+   "tick": 1,
+   "player": 1,
+   "kind": 1,
+   "phi": 11.4
+  },
+  {
+   "tick": 2,
+   "player": 0,
+   "kind": 1,
+   "phi": -0.7
+  },
+  {
+   "tick": 2,
+   "player": 1,
+   "kind": 1,
+   "phi": -0.7
+  },
+  {
+   "tick": 13,
+   "player": 0,
+   "kind": 1,
+   "phi": -17.4
+  },
+  {
+   "tick": 13,
+   "player": 1,
+   "kind": 1,
+   "phi": -17.4
+  },
+  {
+   "tick": 21,
+   "player": 0,
+   "kind": 1,
+   "phi": 140.1
+  },
+  {
+   "tick": 21,
+   "player": 1,
+   "kind": 1,
+   "phi": 140.1
+  },
+  {
+   "tick": 38,
+   "player": 0,
+   "kind": 1,
+   "phi": 39.0
+  },
+  {
+   "tick": 38,
+   "player": 1,
+   "kind": 1,
+   "phi": 39.0
+  },
+  {
+   "tick": 42,
+   "player": 0,
+   "kind": 1,
+   "phi": -82.3
+  },
+  {
+   "tick": 43,
+   "player": 0,
+   "kind": 1,
+   "phi": -180.0
+  },
+  {
+   "tick": 45,
+   "player": 0,
+   "kind": 1,
+   "phi": 29.3
+  },
+  {
+   "tick": 45,
+   "player": 1,
+   "kind": 1,
+   "phi": 29.3
+  },
+  {
+   "tick": 47,
+   "player": 0,
+   "kind": 2,
+   "phi": -61.2
+  },
+  {
+   "tick": 49,
+   "player": 0,
+   "kind": 2,
+   "phi": -61.2
+  },
+  {
+   "tick": 50,
+   "player": 1,
+   "kind": 2,
+   "phi": 67.8
+  },
+  {
+   "tick": 53,
+   "player": 0,
+   "kind": 2,
+   "phi": -119.8
+  },
+  {
+   "tick": 57,
+   "player": 0,
+   "kind": 1,
+   "phi": 131.2
+  },
+  {
+   "tick": 78,
+   "player": 0,
+   "kind": 2,
+   "phi": 23.1
+  },
+  {
+   "tick": 81,
+   "player": 0,
+   "kind": 1,
+   "phi": -19.0
+  },
+  {
+   "tick": 81,
+   "player": 1,
+   "kind": 1,
+   "phi": -19.0
+  },
+  {
+   "tick": 102,
+   "player": 0,
+   "kind": 1,
+   "phi": 34.7
+  },
+  {
+   "tick": 102,
+   "player": 1,
+   "kind": 1,
+   "phi": 34.7
+  },
+  {
+   "tick": 109,
+   "player": 0,
+   "kind": 1,
+   "phi": -131.4
+  },
+  {
+   "tick": 126,
+   "player": 0,
+   "kind": 1,
+   "phi": -53.3
+  },
+  {
+   "tick": 129,
+   "player": 0,
+   "kind": 1,
+   "phi": 103.6
+  },
+  {
+   "tick": 137,
+   "player": 0,
+   "kind": 1,
+   "phi": 81.9
+  },
+  {
+   "tick": 138,
+   "player": 0,
+   "kind": 1,
+   "phi": -25.2
+  },
+  {
+   "tick": 139,
+   "player": 0,
+   "kind": 2,
+   "phi": 46.7
+  },
+  {
+   "tick": 144,
+   "player": 0,
+   "kind": 1,
+   "phi": -35.3
+  },
+  {
+   "tick": 145,
+   "player": 0,
+   "kind": 1,
+   "phi": 166.9
+  },
+  {
+   "tick": 146,
+   "player": 0,
+   "kind": 2,
+   "phi": 25.0
+  },
+  {
+   "tick": 147,
+   "player": 0,
+   "kind": 2,
+   "phi": 180.0
+  },
+  {
+   "tick": 158,
+   "player": 0,
+   "kind": 1,
+   "phi": -81.0
+  },
+  {
+   "tick": 167,
+   "player": 1,
+   "kind": 1,
+   "phi": 146.6
+  },
+  {
+   "tick": 170,
+   "player": 0,
+   "kind": 2,
+   "phi": -52.0
+  }
+ ],
+ "eats": 133,
+ "start": [
+  18500.081919999997,
+  18500.020897
+ ],
+ "style": {},
+ "compute_s": 16
+}

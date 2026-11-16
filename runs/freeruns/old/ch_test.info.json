@@ -1,0 +1,122 @@
+{
+ "name": "ch_test",
+ "style": {},
+ "seconds": 10.08,
+ "died": false,
+ "moves": [
+  {
+   "tick": 8,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 16,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 32,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 48,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 63,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 72,
+   "move": "between",
+   "actor": "B"
+  },
+  {
+   "tick": 83,
+   "move": "between",
+   "actor": "A"
+  },
+  {
+   "tick": 93,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 107,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 121,
+   "move": "between",
+   "actor": "A"
+  },
+  {
+   "tick": 128,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 138,
+   "move": "between",
+   "actor": "B"
+  },
+  {
+   "tick": 149,
+   "move": "circle",
+   "actor": "A"
+  },
+  {
+   "tick": 161,
+   "move": "circle",
+   "actor": "B"
+  },
+  {
+   "tick": 167,
+   "move": "circle",
+   "actor": "A"
+  },
+  {
+   "tick": 177,
+   "move": "trim",
+   "actor": "A"
+  },
+  {
+   "tick": 192,
+   "move": "between",
+   "actor": "A"
+  },
+  {
+   "tick": 203,
+   "move": "circle",
+   "actor": "B"
+  },
+  {
+   "tick": 213,
+   "move": "between",
+   "actor": "A"
+  },
+  {
+   "tick": 228,
+   "move": "between",
+   "actor": "B"
+  },
+  {
+   "tick": 237,
+   "move": "between",
+   "actor": "A"
+  },
+  {
+   "tick": 248,
+   "move": "both",
+   "actor": "AB"
+  }
+ ],
+ "score": 54.42753953172434,
+ "mean_gap_ticks": 11.227272727272727,
+ "max_gap_ticks": 16,
+ "compute_s": 1
+}

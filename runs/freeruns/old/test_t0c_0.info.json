@@ -1,0 +1,321 @@
+{
+ "name": "test_t0c_0",
+ "ticks": 373,
+ "seconds": 14.92,
+ "reason": "one player drained",
+ "splits": [
+  {
+   "tick": 12,
+   "player": 0,
+   "kind": 2,
+   "phi": 21.5
+  },
+  {
+   "tick": 12,
+   "player": 1,
+   "kind": 2,
+   "phi": 21.5
+  },
+  {
+   "tick": 30,
+   "player": 0,
+   "kind": 1,
+   "phi": 19.6
+  },
+  {
+   "tick": 30,
+   "player": 1,
+   "kind": 1,
+   "phi": 19.6
+  },
+  {
+   "tick": 42,
+   "player": 0,
+   "kind": 2,
+   "phi": 32.4
+  },
+  {
+   "tick": 45,
+   "player": 0,
+   "kind": 2,
+   "phi": -46.0
+  },
+  {
+   "tick": 60,
+   "player": 1,
+   "kind": 2,
+   "phi": -68.7
+  },
+  {
+   "tick": 64,
+   "player": 0,
+   "kind": 2,
+   "phi": 23.2
+  },
+  {
+   "tick": 64,
+   "player": 1,
+   "kind": 2,
+   "phi": 23.2
+  },
+  {
+   "tick": 82,
+   "player": 0,
+   "kind": 1,
+   "phi": 21.9
+  },
+  {
+   "tick": 82,
+   "player": 1,
+   "kind": 1,
+   "phi": 21.9
+  },
+  {
+   "tick": 89,
+   "player": 0,
+   "kind": 2,
+   "phi": 139.3
+  },
+  {
+   "tick": 89,
+   "player": 1,
+   "kind": 2,
+   "phi": 139.3
+  },
+  {
+   "tick": 100,
+   "player": 1,
+   "kind": 1,
+   "phi": -29.6
+  },
+  {
+   "tick": 118,
+   "player": 0,
+   "kind": 1,
+   "phi": 84.5
+  },
+  {
+   "tick": 138,
+   "player": 0,
+   "kind": 1,
+   "phi": 9.0
+  },
+  {
+   "tick": 138,
+   "player": 1,
+   "kind": 1,
+   "phi": 9.0
+  },
+  {
+   "tick": 147,
+   "player": 0,
+   "kind": 1,
+   "phi": 106.3
+  },
+  {
+   "tick": 147,
+   "player": 1,
+   "kind": 1,
+   "phi": 106.3
+  },
+  {
+   "tick": 152,
+   "player": 0,
+   "kind": 1,
+   "phi": 180.0
+  },
+  {
+   "tick": 172,
+   "player": 0,
+   "kind": 1,
+   "phi": 11.9
+  },
+  {
+   "tick": 172,
+   "player": 1,
+   "kind": 1,
+   "phi": 11.9
+  },
+  {
+   "tick": 187,
+   "player": 0,
+   "kind": 1,
+   "phi": 180.0
+  },
+  {
+   "tick": 187,
+   "player": 1,
+   "kind": 1,
+   "phi": 180.0
+  },
+  {
+   "tick": 190,
+   "player": 0,
+   "kind": 1,
+   "phi": 180.0
+  },
+  {
+   "tick": 190,
+   "player": 1,
+   "kind": 1,
+   "phi": 180.0
+  },
+  {
+   "tick": 206,
+   "player": 0,
+   "kind": 2,
+   "phi": -33.7
+  },
+  {
+   "tick": 225,
+   "player": 0,
+   "kind": 1,
+   "phi": 79.4
+  },
+  {
+   "tick": 225,
+   "player": 1,
+   "kind": 1,
+   "phi": 79.4
+  },
+  {
+   "tick": 234,
+   "player": 1,
+   "kind": 1,
+   "phi": -28.9
+  },
+  {
+   "tick": 235,
+   "player": 1,
+   "kind": 1,
+   "phi": 180.0
+  },
+  {
+   "tick": 236,
+   "player": 0,
+   "kind": 2,
+   "phi": -80.5
+  },
+  {
+   "tick": 236,
+   "player": 1,
+   "kind": 2,
+   "phi": -80.5
+  },
+  {
+   "tick": 257,
+   "player": 0,
+   "kind": 1,
+   "phi": 29.1
+  },
+  {
+   "tick": 257,
+   "player": 1,
+   "kind": 1,
+   "phi": 29.1
+  },
+  {
+   "tick": 266,
+   "player": 0,
+   "kind": 1,
+   "phi": 67.5
+  },
+  {
+   "tick": 267,
+   "player": 0,
+   "kind": 1,
+   "phi": -76.3
+  },
+  {
+   "tick": 267,
+   "player": 1,
+   "kind": 1,
+   "phi": -76.3
+  },
+  {
+   "tick": 285,
+   "player": 0,
+   "kind": 2,
+   "phi": 16.4
+  },
+  {
+   "tick": 285,
+   "player": 1,
+   "kind": 2,
+   "phi": 16.4
+  },
+  {
+   "tick": 296,
+   "player": 0,
+   "kind": 2,
+   "phi": -21.4
+  },
+  {
+   "tick": 296,
+   "player": 1,
+   "kind": 2,
+   "phi": -21.4
+  },
+  {
+   "tick": 316,
+   "player": 0,
+   "kind": 1,
+   "phi": 32.8
+  },
+  {
+   "tick": 316,
+   "player": 1,
+   "kind": 1,
+   "phi": 32.8
+  },
+  {
+   "tick": 330,
+   "player": 0,
+   "kind": 2,
+   "phi": 44.6
+  },
+  {
+   "tick": 330,
+   "player": 1,
+   "kind": 2,
+   "phi": 44.6
+  },
+  {
+   "tick": 335,
+   "player": 0,
+   "kind": 1,
+   "phi": 143.7
+  },
+  {
+   "tick": 355,
+   "player": 0,
+   "kind": 2,
+   "phi": 45.9
+  },
+  {
+   "tick": 356,
+   "player": 0,
+   "kind": 1,
+   "phi": -89.4
+  },
+  {
+   "tick": 357,
+   "player": 0,
+   "kind": 2,
+   "phi": -10.5
+  },
+  {
+   "tick": 364,
+   "player": 1,
+   "kind": 1,
+   "phi": 54.4
+  }
+ ],
+ "eats": 286,
+ "start": [
+  18500.081919999997,
+  18500.020897
+ ],
+ "style": {},
+ "compute_s": 25
+}

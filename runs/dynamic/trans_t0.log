@@ -1,0 +1,7 @@
+start: chains 40/40 cycles, speed 5 units/s
+TRANS_W 0.5: best chaining solution 6 units/s (12/12 chain 40 cycles)
+TRANS_W 1.0: best chaining solution 8 units/s (12/12 chain 40 cycles)
+TRANS_W 2.0: best chaining solution 8 units/s (12/12 chain 40 cycles)
+TRANS_W 4.0: best chaining solution 8 units/s (12/12 chain 40 cycles)
+TRANS_W 8.0: best chaining solution 8 units/s (12/12 chain 40 cycles)
+FINAL technique 0: 100/100 cycles, 3 units/s

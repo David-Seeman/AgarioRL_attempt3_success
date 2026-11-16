@@ -1,0 +1,123 @@
+{
+ "name": "test_t0c_2",
+ "ticks": 154,
+ "seconds": 6.16,
+ "reason": "one player drained",
+ "splits": [
+  {
+   "tick": 2,
+   "player": 0,
+   "kind": 1,
+   "phi": 4.6
+  },
+  {
+   "tick": 2,
+   "player": 1,
+   "kind": 1,
+   "phi": 4.6
+  },
+  {
+   "tick": 17,
+   "player": 0,
+   "kind": 1,
+   "phi": 21.5
+  },
+  {
+   "tick": 17,
+   "player": 1,
+   "kind": 1,
+   "phi": 21.5
+  },
+  {
+   "tick": 35,
+   "player": 0,
+   "kind": 2,
+   "phi": 123.0
+  },
+  {
+   "tick": 35,
+   "player": 1,
+   "kind": 2,
+   "phi": 123.0
+  },
+  {
+   "tick": 40,
+   "player": 1,
+   "kind": 2,
+   "phi": -68.7
+  },
+  {
+   "tick": 41,
+   "player": 0,
+   "kind": 1,
+   "phi": -75.8
+  },
+  {
+   "tick": 52,
+   "player": 1,
+   "kind": 1,
+   "phi": 35.3
+  },
+  {
+   "tick": 66,
+   "player": 0,
+   "kind": 1,
+   "phi": 0.7
+  },
+  {
+   "tick": 66,
+   "player": 1,
+   "kind": 1,
+   "phi": 0.7
+  },
+  {
+   "tick": 80,
+   "player": 0,
+   "kind": 1,
+   "phi": -180.0
+  },
+  {
+   "tick": 80,
+   "player": 1,
+   "kind": 1,
+   "phi": -180.0
+  },
+  {
+   "tick": 94,
+   "player": 1,
+   "kind": 1,
+   "phi": -58.5
+  },
+  {
+   "tick": 95,
+   "player": 1,
+   "kind": 2,
+   "phi": -39.2
+  },
+  {
+   "tick": 112,
+   "player": 0,
+   "kind": 1,
+   "phi": -104.3
+  },
+  {
+   "tick": 131,
+   "player": 1,
+   "kind": 1,
+   "phi": -95.4
+  },
+  {
+   "tick": 152,
+   "player": 1,
+   "kind": 2,
+   "phi": -38.1
+  }
+ ],
+ "eats": 89,
+ "start": [
+  18500.081919999997,
+  18500.020897
+ ],
+ "style": {},
+ "compute_s": 14
+}

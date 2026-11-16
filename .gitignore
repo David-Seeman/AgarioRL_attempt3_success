@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.Rhistory
+.claude/
+# third-party server, its own git repo: clone github.com/jimboy3100/imsolo-servers into reference_server/
+reference_server/
+# large outputs (kept locally): live recordings, RL checkpoints/pools, logs
+runs/live/
+runs/live_dynamic/
+runs/live_feeding/
+runs/speed_bench_tmp/
+runs/rl/
+runs/*.log
+runs/speedlog

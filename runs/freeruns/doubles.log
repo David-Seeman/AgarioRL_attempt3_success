@@ -1,0 +1,5 @@
+   doubles: all branches died at event 17; back 10 events (backtrack 1)
+   doubles: 3.4 s, 9 events, best score -25 (14s)
+   doubles: 13.1 s, 29 events, best score -158 (42s)
+   doubles: 22.2 s, 49 events, best score -176 (77s)
+doubles: 30.4 s, died=False, 68 presses, mean gap 11.1 ticks, max 17, moves {'double': 30, 'push': 3, 'trim': 5, 'circle': 11, 'between': 19} (111s)

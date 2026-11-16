@@ -1,0 +1,4 @@
+   small_triples: 8.7 s, 20 events, best score 110 (37s)
+   small_triples: 17.6 s, 40 events, best score 203 (86s)
+   small_triples: 24.6 s, 60 events, best score 281 (135s)
+small_triples: 30.2 s, died=False, 72 presses, mean gap 10.4 ticks, max 17, moves {'cross': 13, 'circle': 4, 'between': 14, 'push': 5, 'double': 23, 'trim': 7, 'triple': 5, 'flythrough': 1} (155s)

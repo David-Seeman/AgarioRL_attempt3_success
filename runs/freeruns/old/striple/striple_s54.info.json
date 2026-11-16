@@ -1,0 +1,478 @@
+{
+ "name": "striple_s54",
+ "style": {
+  "striple": 20.0,
+  "few_cells": 4,
+  "double": 2.4000000000000004,
+  "hard_cells": 16,
+  "max_cells": 10,
+  "crumb_w": 0.5,
+  "exclude": [
+   "triple"
+  ]
+ },
+ "seconds": 30.48,
+ "died": false,
+ "moves": [
+  {
+   "tick": 1,
+   "move": "striple",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 12,
+   "move": "trim",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 17,
+   "move": "circle",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 24,
+   "move": "push",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 35,
+   "move": "between",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 40,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 52,
+   "move": "double",
+   "actor": "B",
+   "cap": true
+  },
+  {
+   "tick": 58,
+   "move": "double",
+   "actor": "B",
+   "cap": true
+  },
+  {
+   "tick": 64,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 69,
+   "move": "double",
+   "actor": "B",
+   "cap": true
+  },
+  {
+   "tick": 79,
+   "move": "double",
+   "actor": "B",
+   "cap": true
+  },
+  {
+   "tick": 88,
+   "move": "circle",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 99,
+   "move": "between",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 111,
+   "move": "circle",
+   "actor": "B",
+   "cap": true
+  },
+  {
+   "tick": 122,
+   "move": "double",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 133,
+   "move": "circle",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 148,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 153,
+   "move": "cross",
+   "actor": "AB",
+   "cap": false
+  },
+  {
+   "tick": 167,
+   "move": "push",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 183,
+   "move": "circle",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 194,
+   "move": "trim",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 200,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 210,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 222,
+   "move": "circle",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 238,
+   "move": "push",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 246,
+   "move": "circle",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 256,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 262,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 275,
+   "move": "double",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 292,
+   "move": "circle",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 302,
+   "move": "striple",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 313,
+   "move": "between",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 319,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 326,
+   "move": "double",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 337,
+   "move": "push",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 354,
+   "move": "between",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 360,
+   "move": "push",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 366,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 377,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 387,
+   "move": "double",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 401,
+   "move": "double",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 417,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 432,
+   "move": "circle",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 437,
+   "move": "between",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 443,
+   "move": "between",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 448,
+   "move": "double",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 457,
+   "move": "between",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 472,
+   "move": "between",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 481,
+   "move": "cross",
+   "actor": "AB",
+   "cap": false
+  },
+  {
+   "tick": 490,
+   "move": "push",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 500,
+   "move": "push",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 516,
+   "move": "cross",
+   "actor": "AB",
+   "cap": false
+  },
+  {
+   "tick": 524,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 539,
+   "move": "between",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 545,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 561,
+   "move": "between",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 571,
+   "move": "between",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 579,
+   "move": "between",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 586,
+   "move": "double",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 591,
+   "move": "circle",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 597,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 606,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 617,
+   "move": "cross",
+   "actor": "AB",
+   "cap": false
+  },
+  {
+   "tick": 627,
+   "move": "circle",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 635,
+   "move": "cross",
+   "actor": "AB",
+   "cap": false
+  },
+  {
+   "tick": 645,
+   "move": "circle",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 653,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 659,
+   "move": "circle",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 673,
+   "move": "double",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 687,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 703,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 717,
+   "move": "double",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 729,
+   "move": "circle",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 738,
+   "move": "between",
+   "actor": "A",
+   "cap": false
+  },
+  {
+   "tick": 748,
+   "move": "double",
+   "actor": "B",
+   "cap": false
+  },
+  {
+   "tick": 758,
+   "move": "cross",
+   "actor": "AB",
+   "cap": false
+  }
+ ],
+ "score": 271.1381606285448,
+ "mean_gap_ticks": 9.960526315789474,
+ "max_gap_ticks": 17,
+ "compute_s": 100
+}

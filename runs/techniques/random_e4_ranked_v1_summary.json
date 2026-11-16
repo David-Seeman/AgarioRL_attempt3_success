@@ -1,0 +1,15 @@
+[
+ {
+  "k": 9,
+  "clean": 60,
+  "period": 44,
+  "splits": 4,
+  "rho": 0.0,
+  "mirror": false,
+  "start": "A: 10,091 + 6,727 | B: 13,455 + 6,727",
+  "rotations": 28.36,
+  "drift": 240,
+  "splitrun": true,
+  "text": "B single-splits; A's 10,091 eats B's 3,364. A single-splits; A's 6,727 eats B's 3,364; B's 6,727 eats A's 3,364; B's 10,091 eats A's 3,364. B single-splits; A's 10,091 eats B's 3,364. A single-splits; B's 6,727 eats A's 3,364; A's 6,727 eats B's 3,364; B's 10,091 eats A's 3,364."
+ }
+]

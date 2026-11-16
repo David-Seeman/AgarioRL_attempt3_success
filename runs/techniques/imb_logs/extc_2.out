@@ -1,0 +1,14 @@
+curriculum split 1: best 0.06
+curriculum split 2: best 0.08
+   closing (1 cycle) gen 20: best cost 3.564 (step 0.0098)
+   closing (1 cycle) gen 40: best cost 3.067 (step 0.0040)
+   closing (1 cycle) gen 60: best cost 2.978 (step 0.0003)
+   closing (1 cycle) gen 80: best cost 2.966 (step 0.0000)
+   closing (1 cycle) gen 100: best cost 2.962 (step 0.0000)
+   closing over 1 cycle(s): best cost 2.962
+   closing (3 cycles) gen 20: best cost 35.000 (step 0.0034)
+   closing (3 cycles) gen 40: best cost 35.000 (step 0.0025)
+   closing over 3 cycle(s): best cost 35.000
+   closing (10 cycles) gen 20: best cost 105.000 (step 0.0192)
+   closing over 10 cycle(s): best cost 105.000
+chain test 0 /100 clean cycles; cost 105.0

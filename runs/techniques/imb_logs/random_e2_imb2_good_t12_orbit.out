@@ -1,0 +1,10 @@
+technique 12: IDENTITY events [[0, 1], [1, 1]] rho 0.66
+   curriculum: first 1 split(s) -> best cost 0.13
+   curriculum: first 2 split(s) -> best cost 5.04
+   closing (1 cycle) gen 20: best cost 15.000 (step 0.0192)
+   closing over 1 cycle(s): best cost 15.000
+   closing (3 cycles) gen 20: best cost 35.000 (step 0.0192)
+   closing over 3 cycle(s): best cost 35.000
+   closing (10 cycles) gen 20: best cost 105.000 (step 0.0192)
+   closing over 10 cycle(s): best cost 105.000
+   best one-cycle cost 105.000; chain test: 0/100 clean cycles, cycle length 11 ticks (elite #0)  (91s)

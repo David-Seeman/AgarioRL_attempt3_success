@@ -1,0 +1,6 @@
+technique 58: MIRROR [[0, 1], [1, 1], [0, 1]]
+   3 cycles gen 10: best cost 74.98
+   3 cycles gen 20: best cost 74.98
+   3 cycles gen 30: best cost 47.04
+   6 cycles gen 10: best cost 106.52
+   best cost 106.46; 60-cycle test: 1/60 clean cycles, mean cycle 73 ticks (36s)

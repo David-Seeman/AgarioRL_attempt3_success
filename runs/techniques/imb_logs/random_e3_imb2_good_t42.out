@@ -1,0 +1,9 @@
+technique 42: MIRROR events [[0, 1], [1, 1], [1, 1]] rho 0.00
+   curriculum: first 1 split(s) -> best cost 0.10
+   curriculum: first 2 split(s) -> best cost 0.30
+   curriculum: first 3 split(s) -> best cost 0.28
+   closing (3 cycles) gen 20: best cost 35.000 (step 0.0240)
+   closing over 3 cycle(s): best cost 35.000
+   closing (10 cycles) gen 20: best cost 105.000 (step 0.0192)
+   closing over 10 cycle(s): best cost 105.000
+   best one-cycle cost 105.000; chain test: 0/100 clean cycles, cycle length 65 ticks (elite #0)  (87s)

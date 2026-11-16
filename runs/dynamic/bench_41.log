@@ -1,0 +1,2 @@
+{'seed': 0, 'seconds': 9.3, 'speed': 242.2, 'max_lateral': 418.0, 'mean_gap': 0.5, 'max_gap': 0.76, 'splits': 18, 'wall': 47, 'moves': {'dash': (12, 134), 'between': (3, 73), 'circle': (2, 188), 'cross': (1, 42)}}
+{'seed': 1, 'seconds': 0.0, 'speed': 175000.0, 'max_lateral': 0.0, 'mean_gap': 99.0, 'max_gap': 99.0, 'splits': 0, 'wall': 1, 'moves': {}}

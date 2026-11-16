@@ -1,0 +1,4 @@
+   large_cap: 9.7 s, 20 events, best score -24 (42s)
+   large_cap: 17.0 s, 40 events, best score -88 (94s)
+   large_cap: 26.1 s, 60 events, best score -141 (145s)
+large_cap: 30.1 s, died=False, 69 presses, mean gap 10.8 ticks, max 17, moves {'cross': 2, 'double': 33, 'between': 15, 'circle': 11, 'push': 5, 'trim': 2, 'triple': 1} (159s)

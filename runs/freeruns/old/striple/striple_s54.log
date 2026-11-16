@@ -1,0 +1,6 @@
+   striple_s54: all branches died at event 14; back 10 events (backtrack 1)
+   striple_s54: 3.2 s, 9 events, best score 2 (12s)
+   striple_s54: 11.2 s, 29 events, best score -73 (35s)
+   striple_s54: 19.4 s, 49 events, best score 78 (63s)
+   striple_s54: 27.6 s, 69 events, best score 228 (91s)
+striple_s54: 30.5 s, died=False, 76 presses, mean gap 10.0 ticks, max 17, moves {'striple': 2, 'trim': 2, 'circle': 14, 'push': 7, 'between': 13, 'double': 32, 'cross': 6} (100s)

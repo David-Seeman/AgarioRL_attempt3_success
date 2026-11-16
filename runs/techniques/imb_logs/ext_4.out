@@ -1,0 +1,6 @@
+seeds with all eats of cycle 1 (cost<1): 0 best 5.09
+   closing (3 cycles) gen 20: best cost 35.000 (step 0.0027)
+   closing over 3 cycle(s): best cost 35.000
+   closing (10 cycles) gen 20: best cost 105.000 (step 0.0192)
+   closing over 10 cycle(s): best cost 105.000
+chain test 0 /100 clean cycles; cost 105.0

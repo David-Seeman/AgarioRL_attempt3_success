@@ -1,0 +1,6 @@
+/Users/david/Desktop/Claude_Projects/AgarioRL_attempt3/tools/choreo.py:146: RuntimeWarning: invalid value encountered in scalar divide
+  if abs(d[0] * tt[1] - d[1] * tt[0]) / (np.linalg.norm(d) * max(np.linalg.norm(tt), 1)) > math.sin(math.radians(35)):
+   straight_triples_s33: 9.2 s, 20 events, best score 149 (20s)
+   straight_triples_s33: 17.2 s, 40 events, best score 302 (45s)
+   straight_triples_s33: 25.1 s, 60 events, best score 382 (71s)
+straight_triples_s33: 30.1 s, died=False, 71 presses, mean gap 10.5 ticks, max 17, moves {'cross': 18, 'double': 30, 'between': 10, 'circle': 7, 'trim': 4, 'triple': 1, 'push': 1} (85s)

@@ -1,0 +1,8 @@
+   trims: all branches died at event 7; back 6 events (backtrack 1)
+   trims: 5.6 s, 13 events, best score 32 (14s)
+   trims: all branches died at event 38; back 10 events (backtrack 2)
+   trims: 10.0 s, 22 events, best score 19 (42s)
+   trims: all branches died at event 50; back 10 events (backtrack 3)
+   trims: 14.0 s, 31 events, best score -143 (65s)
+   trims: 23.4 s, 51 events, best score -230 (101s)
+trims: 30.1 s, died=False, 63 presses, mean gap 11.9 ticks, max 17, moves {'both': 1, 'trim': 25, 'circle': 18, 'between': 12, 'double': 2, 'push': 5} (118s)

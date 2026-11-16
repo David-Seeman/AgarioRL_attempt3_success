@@ -1,0 +1,4 @@
+   straight_triples_s31: 8.5 s, 20 events, best score 144 (20s)
+   straight_triples_s31: 15.9 s, 40 events, best score 250 (46s)
+   straight_triples_s31: 23.9 s, 60 events, best score 367 (71s)
+straight_triples_s31: 30.2 s, died=False, 73 presses, mean gap 10.3 ticks, max 17, moves {'cross': 13, 'double': 30, 'circle': 8, 'triple': 3, 'between': 15, 'push': 2, 'trim': 1, 'flythrough': 1} (87s)

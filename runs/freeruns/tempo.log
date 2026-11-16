@@ -1,0 +1,4 @@
+   tempo: 7.4 s, 20 events, best score 96 (21s)
+   tempo: 14.8 s, 40 events, best score 157 (52s)
+   tempo: 22.6 s, 60 events, best score 173 (84s)
+tempo: 30.1 s, died=False, 80 presses, mean gap 9.3 ticks, max 13, moves {'both': 8, 'circle': 26, 'between': 23, 'trim': 10, 'double': 8, 'push': 5} (116s)

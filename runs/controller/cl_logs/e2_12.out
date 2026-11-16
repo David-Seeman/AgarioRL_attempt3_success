@@ -1,0 +1,6 @@
+technique 12: IDENTITY [[0, 1], [1, 1]]
+   3 cycles gen 10: best cost 74.98
+   3 cycles gen 20: best cost 74.98
+   3 cycles gen 30: best cost 74.98
+   6 cycles gen 10: best cost 134.98
+   best cost 134.98; 60-cycle test: 0/60 clean cycles, mean cycle 999 ticks (38s)

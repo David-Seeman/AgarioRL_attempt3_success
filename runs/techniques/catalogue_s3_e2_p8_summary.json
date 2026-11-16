@@ -1,0 +1,54 @@
+[
+ {
+  "k": 0,
+  "clean": 60,
+  "period": 10,
+  "splits": 1,
+  "rho": 0.8220804348503862,
+  "mirror": true,
+  "start": "A: 6,167 + 12,333 | B: 9,250 + 6,167 + 3,083",
+  "rotations": 6.18,
+  "drift": 173,
+  "splitrun": true,
+  "text": "A single-splits; A's just-launched piece eats B's backpiece (3,083); B's piece eats A's launched piece (3,083)."
+ },
+ {
+  "k": 4,
+  "clean": 60,
+  "period": 33,
+  "splits": 2,
+  "rho": 0.6123724356957951,
+  "mirror": true,
+  "start": "A: 17,412 | B: 10,882 + 4,353 + 4,353",
+  "rotations": 9.65,
+  "drift": 406,
+  "splitrun": true,
+  "text": "A single-splits; A's just-launched piece eats B's backpiece (4,353). A single-splits; A's just-launched piece eats B's backpiece (4,353); B's piece eats A's launched piece (6,529)."
+ },
+ {
+  "k": 6,
+  "clean": 60,
+  "period": 19,
+  "splits": 2,
+  "rho": 0.7506731454548184,
+  "mirror": false,
+  "start": "A: 5,692 + 11,385 | B: 11,385 + 5,692 + 2,846",
+  "rotations": 12.03,
+  "drift": 185,
+  "splitrun": true,
+  "text": "A single-splits; A's just-launched piece eats B's backpiece (2,846). B single-splits; A's launched piece eats B's launched piece (2,846); B's just-launched piece eats A's backpiece (2,846); B's just-launched piece eats A's launched piece (2,846)."
+ },
+ {
+  "k": 7,
+  "clean": 60,
+  "period": 39,
+  "splits": 2,
+  "rho": 0.7623512899649267,
+  "mirror": true,
+  "start": "A: 6,435 + 9,652 | B: 3,217 + 12,870 + 4,826",
+  "rotations": 10.48,
+  "drift": 259,
+  "splitrun": true,
+  "text": "A single-splits; A's just-launched piece eats B's backpiece (3,217); A's just-launched piece eats B's backpiece (4,826). B single-splits; B's piece eats A's launched piece (3,217)."
+ }
+]

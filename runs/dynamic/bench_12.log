@@ -1,0 +1,2 @@
+{'seed': 0, 'seconds': 11.2, 'speed': 209.1, 'max_lateral': 285.0, 'mean_gap': 0.6, 'max_gap': 0.8, 'splits': 18, 'wall': 94}
+{'seed': 1, 'seconds': 25.2, 'speed': 206.9, 'max_lateral': 337.0, 'mean_gap': 0.67, 'max_gap': 0.88, 'splits': 37, 'wall': 191}

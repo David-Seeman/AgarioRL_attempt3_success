@@ -1,0 +1,6 @@
+worker 0: 5 candidates
+{'file': 'random_e2_imb2_good.json', 'index': 12, 'family': 'AB/identity/(2, 3)', 'splits': 2, 'curriculum_ok': True, 'failed_split': None, 'chain': 2, 'pool': '/Users/david/Desktop/Claude_Projects/AgarioRL_attempt3/runs/rl/chainpool_random_e2_imb2_good_12.pkl', 'pool_states': 97, 'seconds': 68}
+{'file': 'random_e3_imb2_good.json', 'index': 22, 'family': 'AAB/identity/(2, 4)', 'splits': 3, 'curriculum_ok': False, 'failed_split': 3, 'chain': 0, 'seconds': 103}
+{'file': 'random_e3_imb2_good.json', 'index': 4, 'family': 'AAABBB/mirror/(1, 4)', 'splits': 3, 'curriculum_ok': False, 'failed_split': 2, 'chain': 0, 'seconds': 43}
+{'file': 'random_e2_imb2_good.json', 'index': 6, 'family': 'AB/identity/(3, 4)', 'splits': 2, 'curriculum_ok': False, 'failed_split': 2, 'chain': 0, 'seconds': 27}
+{'file': 'random_e3_imb2_good.json', 'index': 36, 'family': 'AAB/identity/(3, 4)', 'splits': 3, 'curriculum_ok': False, 'failed_split': 2, 'chain': 0, 'seconds': 28}

@@ -1,0 +1,50 @@
+{
+ "name": "ctest",
+ "seconds": 12.0,
+ "moves": [
+  {
+   "tick": 10,
+   "type": "between",
+   "actor": "A",
+   "kind": 1
+  },
+  {
+   "tick": 54,
+   "type": "between",
+   "actor": "B",
+   "kind": 1
+  },
+  {
+   "tick": 113,
+   "type": "between",
+   "actor": "B",
+   "kind": 1
+  },
+  {
+   "tick": 178,
+   "type": "between",
+   "actor": "A",
+   "kind": 1
+  },
+  {
+   "tick": 239,
+   "type": "between",
+   "actor": "B",
+   "kind": 1
+  },
+  {
+   "tick": 284,
+   "type": "between",
+   "actor": "A",
+   "kind": 1
+  }
+ ],
+ "died": false,
+ "retries": 0,
+ "types": [
+  "trim",
+  "double",
+  "between",
+  "push"
+ ]
+}

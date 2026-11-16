@@ -1,0 +1,4 @@
+   small_cross: 8.4 s, 20 events, best score 213 (33s)
+   small_cross: 15.8 s, 40 events, best score 396 (77s)
+   small_cross: 24.6 s, 60 events, best score 581 (120s)
+small_cross: 30.7 s, died=False, 74 presses, mean gap 10.3 ticks, max 17, moves {'cross': 38, 'circle': 4, 'double': 6, 'between': 6, 'flythrough': 16, 'push': 4} (148s)

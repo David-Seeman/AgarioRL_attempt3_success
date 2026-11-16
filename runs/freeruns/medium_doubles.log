@@ -1,0 +1,4 @@
+   medium_doubles: 8.6 s, 20 events, best score 0 (19s)
+   medium_doubles: 16.7 s, 40 events, best score 101 (62s)
+   medium_doubles: 24.4 s, 60 events, best score 248 (103s)
+medium_doubles: 30.6 s, died=False, 72 presses, mean gap 10.6 ticks, max 17, moves {'double': 31, 'trim': 17, 'between': 11, 'push': 1, 'cross': 6, 'circle': 6} (128s)

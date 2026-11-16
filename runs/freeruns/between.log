@@ -1,0 +1,5 @@
+   between: 7.0 s, 20 events, best score 225 (21s)
+   between: 15.0 s, 40 events, best score 450 (51s)
+   between: 22.4 s, 60 events, best score 683 (80s)
+   between: 28.5 s, 80 events, best score 900 (110s)
+between: 31.7 s, died=False, 83 presses, mean gap 9.5 ticks, max 17, moves {'between': 78, 'both': 5} (114s)

@@ -1,0 +1,2298 @@
+[
+ {
+  "path": "dynamic/fast_burst_s0.json",
+  "name": "fast_burst_s0",
+  "description": "Fast-translating splitrun benchmark: 3.0 s, 393.6 units/s along the direction, gap 0.44 s average (max 0.52 s), style {'speed_w': 0.2, 'max_cells': 14, 'crumb_w': 0.3, 'hard_cells': 16, 'gapmax': 6, 'double': 3.0, 'max_tiny': 6}",
+  "source": "sim",
+  "ticks": 75
+ },
+ {
+  "path": "dynamic/translating_t0.json",
+  "name": "translating_catalogue_s3_e2_p8_t0",
+  "description": "Technique 0 turned into a translating splitrun by continuation: 100/100 clean cycles, 3 units/s net travel (periodic, so sustainable by construction).",
+  "source": "sim",
+  "ticks": 1100
+ },
+ {
+  "path": "dynamic/translating_t4.json",
+  "name": "translating_catalogue_s3_e2_p8_t4",
+  "description": "Technique 4 turned into a translating splitrun by continuation: 1/100 clean cycles, 130 units/s net travel (periodic, so sustainable by construction).",
+  "source": "sim",
+  "ticks": 54
+ },
+ {
+  "path": "dynamic/translating_t6.json",
+  "name": "translating_catalogue_s3_e2_p8_t6",
+  "description": "Technique 6 turned into a translating splitrun by continuation: 100/100 clean cycles, 2 units/s net travel (periodic, so sustainable by construction).",
+  "source": "sim",
+  "ticks": 2200
+ },
+ {
+  "path": "dynamic/wtravel_t0_w0.2_s1.json",
+  "name": "wtravel_t0_w0.2_s1",
+  "description": "Translating periodic splitrun (technique 0, world-fixed frame): 1/100 clean cycles, 250 units/s, cycle 14 ticks.",
+  "source": "sim",
+  "ticks": 28
+ },
+ {
+  "path": "dynamic/wtravel_t0_w0.2_s3_local_strict.json",
+  "name": "wtravel_t0_w0.2_s3_local_strict",
+  "description": "Translating periodic splitrun (technique 0, world-fixed frame): 1/100 clean cycles, 81 units/s, cycle 16 ticks.",
+  "source": "sim",
+  "ticks": 32
+ },
+ {
+  "path": "dynamic/wtravel_t0_w0.5_s0.json",
+  "name": "wtravel_t0_w0.5_s0",
+  "description": "Translating periodic splitrun (technique 0, world-fixed frame): 3/100 clean cycles, 219 units/s, cycle 14 ticks.",
+  "source": "sim",
+  "ticks": 56
+ },
+ {
+  "path": "dynamic/wtravel_t0_w0.5_s0_local.json",
+  "name": "wtravel_t0_w0.5_s0_local",
+  "description": "Translating periodic splitrun (technique 0, world-fixed frame): 3/100 clean cycles, 175 units/s, cycle 15 ticks.",
+  "source": "sim",
+  "ticks": 60
+ },
+ {
+  "path": "dynamic/wtravel_t0_w0.5_s0_r3.json",
+  "name": "wtravel_t0_w0.5_s0_r3",
+  "description": "Translating periodic splitrun (technique 0, world-fixed frame): 2/100 clean cycles, 199 units/s, cycle 14 ticks.",
+  "source": "sim",
+  "ticks": 42
+ },
+ {
+  "path": "dynamic/wtravel_t0_w0.5_s0_strict.json",
+  "name": "wtravel_t0_w0.5_s0_strict",
+  "description": "Translating periodic splitrun (technique 0, world-fixed frame): 1/100 clean cycles, 317 units/s, cycle 14 ticks.",
+  "source": "sim",
+  "ticks": 28
+ },
+ {
+  "path": "dynamic/wtravel_t0_w0.5_s2_local_r3.json",
+  "name": "wtravel_t0_w0.5_s2_local_r3",
+  "description": "Translating periodic splitrun (technique 0, world-fixed frame): 3/100 clean cycles, 38 units/s, cycle 16 ticks.",
+  "source": "sim",
+  "ticks": 64
+ },
+ {
+  "path": "dynamic/wtravel_t4_w0.5_s0.json",
+  "name": "wtravel_t4_w0.5_s0",
+  "description": "Translating periodic splitrun (technique 4, world-fixed frame): 0/100 clean cycles, 485 units/s, cycle 17 ticks.",
+  "source": "sim",
+  "ticks": 17
+ },
+ {
+  "path": "dynamic/wtravel_t4_w0.5_s0_local.json",
+  "name": "wtravel_t4_w0.5_s0_local",
+  "description": "Translating periodic splitrun (technique 4, world-fixed frame): 0/100 clean cycles, 391 units/s, cycle 13 ticks.",
+  "source": "sim",
+  "ticks": 12
+ },
+ {
+  "path": "dynamic/wtravel_t6_w0.5_s0.json",
+  "name": "wtravel_t6_w0.5_s0",
+  "description": "Translating periodic splitrun (technique 6, world-fixed frame): 0/100 clean cycles, 293 units/s, cycle 9 ticks.",
+  "source": "sim",
+  "ticks": 9
+ },
+ {
+  "path": "live_feeding/run_0930_002508_001.json",
+  "name": "live_run_1",
+  "description": "Live controller run 1 (feeding): 44.3 s, 50 moves, ended: no continuation. Feeding: 0 captures, team 3,500 -> 3,951. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1108
+ },
+ {
+  "path": "live_feeding/run_0930_002540_002.json",
+  "name": "live_run_2",
+  "description": "Live controller run 2 (feeding): 25.4 s, 29 moves, ended: stuck (watchdog). Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 636
+ },
+ {
+  "path": "live_feeding/run_0930_002604_003.json",
+  "name": "live_run_3",
+  "description": "Live controller run 3 (feeding): 14.0 s, 15 moves, ended: stuck (watchdog). Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 351
+ },
+ {
+  "path": "live_feeding/run_0930_002630_004.json",
+  "name": "live_run_4",
+  "description": "Live controller run 4 (feeding): 22.5 s, 30 moves, ended: rule broken. Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 563
+ },
+ {
+  "path": "live_feeding/run_0930_002720_005.json",
+  "name": "live_run_5",
+  "description": "Live controller run 5 (feeding): 37.7 s, 44 moves, ended: no continuation. Feeding: 0 captures, team 3,500 -> 3,536. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 942
+ },
+ {
+  "path": "live_feeding/run_0930_002803_006.json",
+  "name": "live_run_6",
+  "description": "Live controller run 6 (feeding): 31.1 s, 37 moves, ended: no continuation. Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 777
+ },
+ {
+  "path": "live_feeding/run_0930_002827_007.json",
+  "name": "live_run_7",
+  "description": "Live controller run 7 (feeding): 16.8 s, 20 moves, ended: stuck (watchdog). Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 419
+ },
+ {
+  "path": "live_feeding/run_0930_002848_008.json",
+  "name": "live_run_8",
+  "description": "Live controller run 8 (feeding): 20.7 s, 26 moves, ended: no continuation. Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 517
+ },
+ {
+  "path": "live_feeding/run_0930_002918_009.json",
+  "name": "live_run_9",
+  "description": "Live controller run 9 (feeding): 18.7 s, 21 moves, ended: no continuation. Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 468
+ },
+ {
+  "path": "live_feeding/run_0930_002937_010.json",
+  "name": "live_run_10",
+  "description": "Live controller run 10 (feeding): 15.1 s, 20 moves, ended: rule broken. Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 377
+ },
+ {
+  "path": "live_feeding/run_0930_003010_011.json",
+  "name": "live_run_11",
+  "description": "Live controller run 11 (feeding): 21.3 s, 21 moves, ended: no continuation. Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 532
+ },
+ {
+  "path": "live_feeding/run_0930_003043_012.json",
+  "name": "live_run_12",
+  "description": "Live controller run 12 (feeding): 17.2 s, 17 moves, ended: no continuation. Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 431
+ },
+ {
+  "path": "live_feeding/run_0930_003115_013.json",
+  "name": "live_run_13",
+  "description": "Live controller run 13 (feeding): 22.7 s, 26 moves, ended: no continuation. Feeding: 0 captures, team 3,500 -> 3,427. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 568
+ },
+ {
+  "path": "live_feeding/run_0930_003136_014.json",
+  "name": "live_run_14",
+  "description": "Live controller run 14 (feeding): 22.8 s, 28 moves, ended: no continuation. Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 569
+ },
+ {
+  "path": "live_feeding/run_0930_003158_015.json",
+  "name": "live_run_15",
+  "description": "Live controller run 15 (feeding): 13.4 s, 18 moves, ended: stuck (watchdog). Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 334
+ },
+ {
+  "path": "live_feeding/run_0930_003221_016.json",
+  "name": "live_run_16",
+  "description": "Live controller run 16 (feeding): 14.8 s, 16 moves, ended: stuck (watchdog). Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 369
+ },
+ {
+  "path": "live_feeding/run_0930_003255_018.json",
+  "name": "live_run_18",
+  "description": "Live controller run 18 (feeding): 31.7 s, 42 moves, ended: rule broken. Feeding: 0 captures, team 3,500 -> 3,690. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 792
+ },
+ {
+  "path": "live_feeding/run_0930_003334_019.json",
+  "name": "live_run_19",
+  "description": "Live controller run 19 (feeding): 38.8 s, 48 moves, ended: rule broken. Feeding: 0 captures, team 3,500 -> 3,641. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 971
+ },
+ {
+  "path": "live_feeding/run_0930_003405_020.json",
+  "name": "live_run_20",
+  "description": "Live controller run 20 (feeding): 19.0 s, 23 moves, ended: stuck (watchdog). Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 476
+ },
+ {
+  "path": "live_feeding/run_0930_003429_021.json",
+  "name": "live_run_21",
+  "description": "Live controller run 21 (feeding): 22.6 s, 28 moves, ended: rule broken. Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 564
+ },
+ {
+  "path": "live_feeding/run_0930_003448_022.json",
+  "name": "live_run_22",
+  "description": "Live controller run 22 (feeding): 17.5 s, 19 moves, ended: rule broken. Feeding: 0 captures, team 3,500 -> 3,500. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 438
+ },
+ {
+  "path": "live_feeding/run_0930_003515_023.json",
+  "name": "live_run_23",
+  "description": "Live controller run 23 (feeding): 22.2 s, 29 moves, ended: no continuation. Feeding: 0 captures, team 3,500 -> 3,562. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 554
+ },
+ {
+  "path": "freeruns/between.json",
+  "name": "between",
+  "description": "Between the pieces: 31.7 s, 88 split presses, downtime 0.38 s average (max 0.68 s). Double 0, triple 0, off-circle 11, between-gap 38, crossing 1, fly-through 1, simultaneous 5, verified straight triples 0. Splits aimed through the open gap between two partner pieces.",
+  "source": "sim",
+  "ticks": 792
+ },
+ {
+  "path": "freeruns/both.json",
+  "name": "both",
+  "description": "Simultaneous: 30.1 s, 88 split presses, downtime 0.44 s average (max 0.68 s). Double 5, triple 0, off-circle 21, between-gap 31, crossing 0, fly-through 0, simultaneous 20, verified straight triples 0. Both players often split in the same tick.",
+  "source": "sim",
+  "ticks": 753
+ },
+ {
+  "path": "freeruns/doubles.json",
+  "name": "doubles",
+  "description": "Double splits: 30.4 s, 68 split presses, downtime 0.44 s average (max 0.68 s). Double 30, triple 0, off-circle 13, between-gap 31, crossing 0, fly-through 1, simultaneous 0, verified straight triples 0. Autosplits: 2. About every second split is a double split, aimed at a chosen partner piece.",
+  "source": "sim",
+  "ticks": 759
+ },
+ {
+  "path": "freeruns/imbalanced.json",
+  "name": "imbalanced",
+  "description": "Imbalanced (~2.7x): 30.4 s, 73 split presses, downtime 0.42 s average (max 0.68 s). Double 3, triple 0, off-circle 25, between-gap 25, crossing 1, fly-through 0, simultaneous 2, verified straight triples 0. Autosplits: 1. The smaller player holds about 27% of the mass (the other ~2.7x).",
+  "source": "sim",
+  "ticks": 759
+ },
+ {
+  "path": "freeruns/large_45k.json",
+  "name": "large_45k",
+  "description": "Large 45k: 30.8 s, 71 split presses, downtime 0.45 s average (max 0.68 s). Double 15, triple 0, off-circle 21, between-gap 19, crossing 0, fly-through 0, simultaneous 3, verified straight triples 0. Total mass 45,000; pieces peak just under the 22,500 autosplit limit. Double splits and sideways trims.",
+  "source": "sim",
+  "ticks": 770
+ },
+ {
+  "path": "freeruns/large_60k.json",
+  "name": "large_60k",
+  "description": "Large 60k with autosplits: 30.1 s, 64 split presses, downtime 0.47 s average (max 0.68 s). Double 6, triple 0, off-circle 15, between-gap 34, crossing 0, fly-through 2, simultaneous 1, verified straight triples 0. Autosplits: 2. Total mass 60,000; pieces grow past 22,500 and autosplit. Circle shots, between-gap splits, trims.",
+  "source": "sim",
+  "ticks": 752
+ },
+ {
+  "path": "freeruns/large_cap.json",
+  "name": "large_cap",
+  "description": "Large 60k, many cells: 30.1 s, 71 split presses, downtime 0.43 s average (max 0.68 s). Double 33, triple 1, off-circle 12, between-gap 33, crossing 0, fly-through 0, simultaneous 2, verified straight triples 0. Autosplits: 8. Total mass 60,000, about 9.5 cells per player and many double splits; aimed for selective splits at the 16-cell cap but managed only one.",
+  "source": "sim",
+  "ticks": 752
+ },
+ {
+  "path": "freeruns/medium_doubles.json",
+  "name": "medium_doubles",
+  "description": "Double splits + trims (10k): 30.6 s, 78 split presses, downtime 0.42 s average (max 0.68 s). Double 31, triple 0, off-circle 23, between-gap 41, crossing 1, fly-through 6, simultaneous 6, verified straight triples 0. Total mass 10,000. Double splits, and trims aimed sideways / slightly back whose pieces the partner eats soon after.",
+  "source": "sim",
+  "ticks": 766
+ },
+ {
+  "path": "freeruns/medium_flythrough.json",
+  "name": "medium_flythrough",
+  "description": "Fly-through (10k): 30.4 s, 135 split presses, downtime 0.36 s average (max 0.68 s). Double 4, triple 0, off-circle 31, between-gap 45, crossing 11, fly-through 19, simultaneous 51, verified straight triples 0. Total mass 10,000. Fly-through shots and crossing splits; the shortest downtime of the catalogue.",
+  "source": "sim",
+  "ticks": 761
+ },
+ {
+  "path": "freeruns/medium_triples.json",
+  "name": "medium_triples",
+  "description": "Triples + trims (10k): 30.0 s, 100 split presses, downtime 0.41 s average (max 0.68 s). Double 17, triple 6, off-circle 32, between-gap 59, crossing 3, fly-through 12, simultaneous 27, verified straight triples 1. Total mass 10,000. Ordinary (not straight) triple splits, doubles, sideways trims and crossing splits.",
+  "source": "sim",
+  "ticks": 751
+ },
+ {
+  "path": "freeruns/mixed.json",
+  "name": "mixed",
+  "description": "Mixed bag: 30.5 s, 80 split presses, downtime 0.40 s average (max 0.68 s). Double 6, triple 0, off-circle 22, between-gap 27, crossing 0, fly-through 1, simultaneous 5, verified straight triples 0. Trims, double splits, between-gap and simultaneous splits.",
+  "source": "sim",
+  "ticks": 762
+ },
+ {
+  "path": "freeruns/push.json",
+  "name": "push",
+  "description": "Aimed into own pieces: 31.1 s, 74 split presses, downtime 0.45 s average (max 0.68 s). Double 8, triple 0, off-circle 24, between-gap 24, crossing 0, fly-through 3, simultaneous 5, verified straight triples 0. Splits aimed into the splitter's own pieces (made before the push-split clarification; not a true push-split study).",
+  "source": "sim",
+  "ticks": 777
+ },
+ {
+  "path": "freeruns/small_cross.json",
+  "name": "small_cross",
+  "description": "Crossing + fly-through (3.5k): 30.7 s, 112 split presses, downtime 0.41 s average (max 0.68 s). Double 6, triple 0, off-circle 20, between-gap 69, crossing 14, fly-through 16, simultaneous 38, verified straight triples 0. Total mass 3,500. Both players often split at each other in the same tick; launched pieces fly over a same-size partner piece to eat a smaller one behind it.",
+  "source": "sim",
+  "ticks": 767
+ },
+ {
+  "path": "freeruns/small_doubles.json",
+  "name": "small_doubles",
+  "description": "Double splits (3.5k): 30.4 s, 81 split presses, downtime 0.41 s average (max 0.68 s). Double 39, triple 2, off-circle 14, between-gap 54, crossing 2, fly-through 8, simultaneous 7, verified straight triples 0. Total mass 3,500. Double splits most of the time, with a few sideways trims.",
+  "source": "sim",
+  "ticks": 760
+ },
+ {
+  "path": "freeruns/small_triples.json",
+  "name": "small_triples",
+  "description": "Triple splits (3.5k): 30.2 s, 85 split presses, downtime 0.42 s average (max 0.68 s). Double 23, triple 5, off-circle 24, between-gap 59, crossing 6, fly-through 8, simultaneous 13, verified straight triples 1. Total mass 3,500. Ordinary triple splits (NOT straight: fired from several cells side by side, and the cursor moved on right after), plus doubles.",
+  "source": "sim",
+  "ticks": 756
+ },
+ {
+  "path": "freeruns/straight_triples.json",
+  "name": "straight_triples",
+  "description": "Straight triple splits (37k): 30.5 s, 82 split presses, downtime 0.40 s average (max 0.68 s). Double 32, triple 2, off-circle 22, between-gap 47, crossing 0, fly-through 2, simultaneous 6, verified straight triples 2. Straight triple splits: fired from 1 cell (or 2 lined-up cells) with the cursor held far along that line for ~1 s (like 'n' in imsolo), so all 8 pieces lie on one line. Opening triple by A; a second one by B at 12 s. Plus many double splits.",
+  "source": "sim",
+  "ticks": 762
+ },
+ {
+  "path": "freeruns/tempo.json",
+  "name": "tempo",
+  "description": "Tempo circle: 30.1 s, 88 split presses, downtime 0.37 s average (max 0.52 s). Double 8, triple 0, off-circle 20, between-gap 27, crossing 0, fly-through 0, simultaneous 8, verified straight triples 0. Autosplits: 1. Least downtime among the 37k runs; circle shots with some between-gap and off-circle splits.",
+  "source": "sim",
+  "ticks": 752
+ },
+ {
+  "path": "freeruns/trims.json",
+  "name": "trims",
+  "description": "Trim-heavy: 30.1 s, 64 split presses, downtime 0.47 s average (max 0.68 s). Double 2, triple 0, off-circle 27, between-gap 25, crossing 0, fly-through 1, simultaneous 1, verified straight triples 0. Many off-circle trims (70-180 deg from the partner) to shrink the splitter's pieces.",
+  "source": "sim",
+  "ticks": 753
+ },
+ {
+  "path": "stage1/01_single_split.json",
+  "name": "01_single_split",
+  "description": "Player A (18.5k) splits once to the right and then holds its cursor still. The two 9,250-mass halves should fly ~820 units, push against each other, and merge back after ~29 s (721 ticks). B is idle.",
+  "source": "sim",
+  "ticks": 1000
+ },
+ {
+  "path": "stage1/02a_double_split_same_tick.json",
+  "name": "02a_double_split_same_tick",
+  "description": "Player A (18.5k) double-splits to the right with BOTH splits processed in the same server tick, then holds still. Four 4,625-mass pieces in a line; they merge back after ~20 s (510 ticks). B is idle. Compare with 02b: which one looks like an imsolo double split?",
+  "source": "sim",
+  "ticks": 800
+ },
+ {
+  "path": "stage1/02b_double_split_1tick_gap.json",
+  "name": "02b_double_split_1tick_gap",
+  "description": "Same as 02a, but the second split is processed one server tick (40 ms) after the first, like the client's fallback double-split macro. The first piece has already flown ~87 units, so the pieces spread differently.",
+  "source": "sim",
+  "ticks": 800
+ },
+ {
+  "path": "stage1/03_backpiece_eat.json",
+  "name": "03_backpiece_eat",
+  "description": "The basic splitrun ingredient. A (18.5k) double-splits upwards (same tick), leaving 4 quarter pieces (4,625) stacked in a line; B (18.5k) single-splits at A's backpiece 3 ticks later. When the 13-tick no-collide window ends, A's stacked pieces spring apart, and B's 9,250 launched half (>1.3x bigger) eats the quarter pieces it reaches.",
+  "source": "sim",
+  "ticks": 150
+ },
+ {
+  "path": "stage1/04_autosplit.json",
+  "name": "04_autosplit",
+  "description": "Autosplit check. A is a single 20k cell; B (10k) splits at A, A eats the 5k piece and reaches 25k, which is over the 22,500 single-cell limit, so A autosplits into two 12.5k cells (random angle).",
+  "source": "sim",
+  "ticks": 100
+ },
+ {
+  "path": "stage1/05a_random_splits_REAL_SERVER.json",
+  "name": "05a_random_splits_REAL_SERVER",
+  "description": "Random aggressive splitting by both players, run through the REAL imsolo server code. Compare with 05b (same inputs, simulator) using 'overlay'.",
+  "source": "server",
+  "ticks": 374
+ },
+ {
+  "path": "stage1/05b_random_splits_SIM.json",
+  "name": "05b_random_splits_SIM",
+  "description": "Same input tape as 05a, run through the simulator. Should be indistinguishable from 05a.",
+  "source": "sim",
+  "ticks": 374
+ },
+ {
+  "path": "controller/mpc_random_e2_imb2_good_11.json",
+  "name": "mpc_random_e2_imb2_good_11",
+  "description": "MPC controller on random_e2_imb2_good #11: 0 complete cycles, stopped: unintended eat (B ate 5756). Smaller player's share 0.33; split order [[1, 1], [0, 1]].",
+  "source": "sim",
+  "ticks": 11
+ },
+ {
+  "path": "controller/mpc_random_e2_imb2_good_12.json",
+  "name": "mpc_random_e2_imb2_good_12",
+  "description": "MPC controller on random_e2_imb2_good #12: 1 complete cycles, stopped: unintended eat (A ate 5286). Smaller player's share 0.33; split order [[0, 1], [1, 1]].",
+  "source": "sim",
+  "ticks": 162
+ },
+ {
+  "path": "controller/mpc_random_e2_imb2_good_4.json",
+  "name": "mpc_random_e2_imb2_good_4",
+  "description": "MPC controller on random_e2_imb2_good #4: 1 complete cycles, stopped: unintended eat (B ate 6055). Smaller player's share 0.27; split order [[0, 1], [1, 1]] (mirror).",
+  "source": "sim",
+  "ticks": 74
+ },
+ {
+  "path": "controller/mpc_random_e2_imb2_good_7.json",
+  "name": "mpc_random_e2_imb2_good_7",
+  "description": "MPC controller on random_e2_imb2_good #7: 0 complete cycles, stopped: unintended eat (A ate 860). Smaller player's share 0.30; split order [[1, 1], [0, 1]].",
+  "source": "sim",
+  "ticks": 26
+ },
+ {
+  "path": "live_dynamic/run_0929_212815_001.json",
+  "name": "live_run_1",
+  "description": "Live controller run 1: 341.1 s, 745 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 8528
+ },
+ {
+  "path": "live_dynamic/run_0929_213458_003.json",
+  "name": "live_run_3",
+  "description": "Live controller run 3: 374.5 s, 834 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 9363
+ },
+ {
+  "path": "live_dynamic/run_0929_213722_008.json",
+  "name": "live_run_8",
+  "description": "Live controller run 8: 69.3 s, 156 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1732
+ },
+ {
+  "path": "live_dynamic/run_0929_214057_009.json",
+  "name": "live_run_9",
+  "description": "Live controller run 9: 215.0 s, 477 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5375
+ },
+ {
+  "path": "live_dynamic/run_0929_214443_010.json",
+  "name": "live_run_10",
+  "description": "Live controller run 10: 225.8 s, 501 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5644
+ },
+ {
+  "path": "live_dynamic/run_0929_214954_012.json",
+  "name": "live_run_12",
+  "description": "Live controller run 12: 263.7 s, 583 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6593
+ },
+ {
+  "path": "live_dynamic/run_0929_215155_013.json",
+  "name": "live_run_13",
+  "description": "Live controller run 13: 115.8 s, 260 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2896
+ },
+ {
+  "path": "live_dynamic/run_0929_215328_014.json",
+  "name": "live_run_14",
+  "description": "Live controller run 14: 93.2 s, 210 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2331
+ },
+ {
+  "path": "live_dynamic/run_0929_215624_015.json",
+  "name": "live_run_15",
+  "description": "Live controller run 15: 176.3 s, 390 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4408
+ },
+ {
+  "path": "live_dynamic/run_0929_215725_016.json",
+  "name": "live_run_16",
+  "description": "Live controller run 16: 60.2 s, 133 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1506
+ },
+ {
+  "path": "live_dynamic/run_0929_220208_017.json",
+  "name": "live_run_17",
+  "description": "Live controller run 17: 283.8 s, 611 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 7095
+ },
+ {
+  "path": "live_dynamic/run_0929_220737_019.json",
+  "name": "live_run_19",
+  "description": "Live controller run 19: 275.9 s, 608 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6897
+ },
+ {
+  "path": "live_dynamic/run_0929_221000_020.json",
+  "name": "live_run_20",
+  "description": "Live controller run 20: 144.0 s, 315 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3599
+ },
+ {
+  "path": "live_dynamic/run_0929_221327_023.json",
+  "name": "live_run_23",
+  "description": "Live controller run 23: 111.1 s, 248 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2777
+ },
+ {
+  "path": "live_dynamic/run_0929_221638_025.json",
+  "name": "live_run_25",
+  "description": "Live controller run 25: 180.0 s, 396 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4500
+ },
+ {
+  "path": "live_dynamic/run_0929_222939_026.json",
+  "name": "live_run_26",
+  "description": "Live controller run 26: 127.7 s, 290 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3192
+ },
+ {
+  "path": "live_dynamic/run_0929_223703_028.json",
+  "name": "live_run_28",
+  "description": "Live controller run 28: 86.3 s, 185 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2158
+ },
+ {
+  "path": "live_dynamic/run_0929_223919_030.json",
+  "name": "live_run_30",
+  "description": "Live controller run 30: 110.9 s, 245 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2773
+ },
+ {
+  "path": "live_dynamic/run_0929_224104_032.json",
+  "name": "live_run_32",
+  "description": "Live controller run 32: 88.4 s, 200 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2211
+ },
+ {
+  "path": "live_dynamic/run_0929_224324_033.json",
+  "name": "live_run_33",
+  "description": "Live controller run 33: 139.7 s, 301 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3493
+ },
+ {
+  "path": "live_dynamic/run_0929_225010_037.json",
+  "name": "live_run_37",
+  "description": "Live controller run 37: 265.6 s, 586 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6640
+ },
+ {
+  "path": "live_dynamic/run_0929_225617_038.json",
+  "name": "live_run_38",
+  "description": "Live controller run 38: 356.3 s, 764 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 8907
+ },
+ {
+  "path": "live_dynamic/run_0929_225822_040.json",
+  "name": "live_run_40",
+  "description": "Live controller run 40: 108.8 s, 246 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2721
+ },
+ {
+  "path": "live_dynamic/run_0929_225950_041.json",
+  "name": "live_run_41",
+  "description": "Live controller run 41: 87.3 s, 197 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2183
+ },
+ {
+  "path": "live_dynamic/run_0929_230229_042.json",
+  "name": "live_run_42",
+  "description": "Live controller run 42: 152.1 s, 343 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3803
+ },
+ {
+  "path": "live_dynamic/run_0929_230532_043.json",
+  "name": "live_run_43",
+  "description": "Live controller run 43: 184.1 s, 408 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4603
+ },
+ {
+  "path": "live_dynamic/run_0929_230729_044.json",
+  "name": "live_run_44",
+  "description": "Live controller run 44: 116.6 s, 268 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2915
+ },
+ {
+  "path": "live_dynamic/run_0929_230837_045.json",
+  "name": "live_run_45",
+  "description": "Live controller run 45: 67.8 s, 154 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1696
+ },
+ {
+  "path": "live_dynamic/run_0929_231249_049.json",
+  "name": "live_run_49",
+  "description": "Live controller run 49: 180.1 s, 396 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4503
+ },
+ {
+  "path": "live_dynamic/run_0929_231502_050.json",
+  "name": "live_run_50",
+  "description": "Live controller run 50: 132.0 s, 290 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3299
+ },
+ {
+  "path": "live_dynamic/run_0929_232234_051.json",
+  "name": "live_run_51",
+  "description": "Live controller run 51: 452.3 s, 982 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 11308
+ },
+ {
+  "path": "live_dynamic/run_0929_232538_053.json",
+  "name": "live_run_53",
+  "description": "Live controller run 53: 172.3 s, 376 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4308
+ },
+ {
+  "path": "live_dynamic/run_0929_232647_054.json",
+  "name": "live_run_54",
+  "description": "Live controller run 54: 67.6 s, 149 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1689
+ },
+ {
+  "path": "live_dynamic/run_0929_232929_055.json",
+  "name": "live_run_55",
+  "description": "Live controller run 55: 159.3 s, 359 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3983
+ },
+ {
+  "path": "live_dynamic/run_0929_233610_056.json",
+  "name": "live_run_56",
+  "description": "Live controller run 56: 401.0 s, 872 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 10026
+ },
+ {
+  "path": "live_dynamic/run_0929_233953_057.json",
+  "name": "live_run_57",
+  "description": "Live controller run 57: 219.6 s, 474 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5490
+ },
+ {
+  "path": "live_dynamic/run_0929_235029_061.json",
+  "name": "live_run_61",
+  "description": "Live controller run 61: 502.5 s, 1093 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 12562
+ },
+ {
+  "path": "live_dynamic/run_0929_235659_065.json",
+  "name": "live_run_65",
+  "description": "Live controller run 65: 264.6 s, 581 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6615
+ },
+ {
+  "path": "live_dynamic/run_0930_000155_067.json",
+  "name": "live_run_67",
+  "description": "Live controller run 67: 234.7 s, 528 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5868
+ },
+ {
+  "path": "live_dynamic/run_0930_001124_070.json",
+  "name": "live_run_70",
+  "description": "Live controller run 70: 534.5 s, 1165 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 13363
+ },
+ {
+  "path": "live_dynamic/run_0930_001430_072.json",
+  "name": "live_run_72",
+  "description": "Live controller run 72: 157.6 s, 353 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3940
+ },
+ {
+  "path": "live_dynamic/run_0930_001642_073.json",
+  "name": "live_run_73",
+  "description": "Live controller run 73: 131.1 s, 292 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3277
+ },
+ {
+  "path": "live_dynamic/run_0930_001812_074.json",
+  "name": "live_run_74",
+  "description": "Live controller run 74: 89.2 s, 187 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2229
+ },
+ {
+  "path": "live_dynamic/run_0930_002017_076.json",
+  "name": "live_run_76",
+  "description": "Live controller run 76: 70.8 s, 158 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1771
+ },
+ {
+  "path": "live_dynamic/run_0930_002222_077.json",
+  "name": "live_run_77",
+  "description": "Live controller run 77: 111.8 s, 246 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2796
+ },
+ {
+  "path": "live_dynamic/run_0930_003103_078.json",
+  "name": "live_run_78",
+  "description": "Live controller run 78: 513.5 s, 1142 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 12838
+ },
+ {
+  "path": "live_dynamic/run_0930_003238_079.json",
+  "name": "live_run_79",
+  "description": "Live controller run 79: 94.5 s, 212 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2363
+ },
+ {
+  "path": "live_dynamic/run_0930_010320_004.json",
+  "name": "live_run_4",
+  "description": "Live controller run 4 (dynamic): 192.4 s, 335 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4809
+ },
+ {
+  "path": "live_dynamic/run_0930_010621_005.json",
+  "name": "live_run_5",
+  "description": "Live controller run 5 (dynamic): 181.5 s, 309 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4537
+ },
+ {
+  "path": "live_dynamic/run_0930_011009_007.json",
+  "name": "live_run_7",
+  "description": "Live controller run 7 (dynamic): 216.2 s, 371 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5404
+ },
+ {
+  "path": "live_dynamic/run_0930_011309_008.json",
+  "name": "live_run_8",
+  "description": "Live controller run 8 (dynamic): 179.6 s, 310 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4490
+ },
+ {
+  "path": "live_dynamic/run_0930_011423_009.json",
+  "name": "live_run_9",
+  "description": "Live controller run 9 (dynamic): 74.1 s, 127 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1853
+ },
+ {
+  "path": "live_dynamic/run_0930_011731_011.json",
+  "name": "live_run_11",
+  "description": "Live controller run 11 (dynamic): 156.9 s, 261 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3923
+ },
+ {
+  "path": "live_dynamic/run_0930_012349_012.json",
+  "name": "live_run_12",
+  "description": "Live controller run 12 (dynamic): 368.7 s, 650 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 9217
+ },
+ {
+  "path": "live_dynamic/run_0930_012551_016.json",
+  "name": "live_run_16",
+  "description": "Live controller run 16 (dynamic): 66.2 s, 112 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1654
+ },
+ {
+  "path": "live_dynamic/run_0930_013441_018.json",
+  "name": "live_run_18",
+  "description": "Live controller run 18 (dynamic): 496.9 s, 864 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 12423
+ },
+ {
+  "path": "live_dynamic/run_0930_013704_019.json",
+  "name": "live_run_19",
+  "description": "Live controller run 19 (dynamic): 142.6 s, 245 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3566
+ },
+ {
+  "path": "live_dynamic/run_0930_014557_025.json",
+  "name": "live_run_25",
+  "description": "Live controller run 25 (dynamic): 358.6 s, 605 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 8964
+ },
+ {
+  "path": "live_dynamic/run_0930_014755_027.json",
+  "name": "live_run_27",
+  "description": "Live controller run 27 (dynamic): 82.3 s, 152 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2058
+ },
+ {
+  "path": "live_dynamic/run_0930_015225_029.json",
+  "name": "live_run_29",
+  "description": "Live controller run 29 (dynamic): 225.4 s, 384 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5635
+ },
+ {
+  "path": "live_dynamic/run_0930_015523_032.json",
+  "name": "live_run_32",
+  "description": "Live controller run 32 (dynamic): 146.8 s, 252 moves, ended: no continuation. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3670
+ },
+ {
+  "path": "live_dynamic/run_0930_015735_034.json",
+  "name": "live_run_34",
+  "description": "Live controller run 34 (dynamic): 116.8 s, 198 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2919
+ },
+ {
+  "path": "live_dynamic/run_0930_020131_037.json",
+  "name": "live_run_37",
+  "description": "Live controller run 37 (dynamic): 178.6 s, 311 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4464
+ },
+ {
+  "path": "live_dynamic/run_0930_020646_039.json",
+  "name": "live_run_39",
+  "description": "Live controller run 39 (dynamic): 262.3 s, 443 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6557
+ },
+ {
+  "path": "live_dynamic/run_0930_020933_040.json",
+  "name": "live_run_40",
+  "description": "Live controller run 40 (dynamic): 164.7 s, 282 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4117
+ },
+ {
+  "path": "live_dynamic/run_0930_021122_041.json",
+  "name": "live_run_41",
+  "description": "Live controller run 41 (dynamic): 106.5 s, 189 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2662
+ },
+ {
+  "path": "live_dynamic/run_0930_021430_043.json",
+  "name": "live_run_43",
+  "description": "Live controller run 43 (dynamic): 160.8 s, 273 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4021
+ },
+ {
+  "path": "live_dynamic/run_0930_021839_045.json",
+  "name": "live_run_45",
+  "description": "Live controller run 45 (dynamic): 211.1 s, 360 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5278
+ },
+ {
+  "path": "live_dynamic/run_0930_022153_048.json",
+  "name": "live_run_48",
+  "description": "Live controller run 48 (dynamic): 132.1 s, 222 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3303
+ },
+ {
+  "path": "live_dynamic/run_0930_022323_049.json",
+  "name": "live_run_49",
+  "description": "Live controller run 49 (dynamic): 87.8 s, 152 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2195
+ },
+ {
+  "path": "live_dynamic/run_0930_022612_052.json",
+  "name": "live_run_52",
+  "description": "Live controller run 52 (dynamic): 134.5 s, 229 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3362
+ },
+ {
+  "path": "live_dynamic/run_0930_023738_055.json",
+  "name": "live_run_55",
+  "description": "Live controller run 55 (dynamic): 638.9 s, 1094 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 15973
+ },
+ {
+  "path": "live_dynamic/run_0930_024012_058.json",
+  "name": "live_run_58",
+  "description": "Live controller run 58 (dynamic): 117.7 s, 203 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2943
+ },
+ {
+  "path": "live_dynamic/run_0930_024811_060.json",
+  "name": "live_run_60",
+  "description": "Live controller run 60 (dynamic): 427.2 s, 730 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 10681
+ },
+ {
+  "path": "live_dynamic/run_0930_025025_061.json",
+  "name": "live_run_61",
+  "description": "Live controller run 61 (dynamic): 133.6 s, 228 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3340
+ },
+ {
+  "path": "live_dynamic/run_0930_025910_062.json",
+  "name": "live_run_62",
+  "description": "Live controller run 62 (dynamic): 524.7 s, 901 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 13118
+ },
+ {
+  "path": "live_dynamic/run_0930_030637_065.json",
+  "name": "live_run_65",
+  "description": "Live controller run 65 (dynamic): 380.4 s, 653 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 9509
+ },
+ {
+  "path": "live_dynamic/run_0930_030806_066.json",
+  "name": "live_run_66",
+  "description": "Live controller run 66 (dynamic): 87.7 s, 152 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2193
+ },
+ {
+  "path": "live_dynamic/run_0930_031048_067.json",
+  "name": "live_run_67",
+  "description": "Live controller run 67 (dynamic): 157.4 s, 267 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3936
+ },
+ {
+  "path": "live_dynamic/run_0930_031431_072.json",
+  "name": "live_run_72",
+  "description": "Live controller run 72 (dynamic): 104.1 s, 178 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2602
+ },
+ {
+  "path": "live_dynamic/run_0930_031611_074.json",
+  "name": "live_run_74",
+  "description": "Live controller run 74 (dynamic): 75.2 s, 131 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1881
+ },
+ {
+  "path": "live_dynamic/run_0930_031846_076.json",
+  "name": "live_run_76",
+  "description": "Live controller run 76 (dynamic): 144.8 s, 251 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3620
+ },
+ {
+  "path": "live_dynamic/run_0930_032107_078.json",
+  "name": "live_run_78",
+  "description": "Live controller run 78 (dynamic): 120.4 s, 210 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3009
+ },
+ {
+  "path": "live_dynamic/run_0930_032232_079.json",
+  "name": "live_run_79",
+  "description": "Live controller run 79 (dynamic): 85.0 s, 141 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2125
+ },
+ {
+  "path": "live_dynamic/run_0930_032745_081.json",
+  "name": "live_run_81",
+  "description": "Live controller run 81 (dynamic): 282.3 s, 478 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 7057
+ },
+ {
+  "path": "live_dynamic/run_0930_033128_082.json",
+  "name": "live_run_82",
+  "description": "Live controller run 82 (dynamic): 217.2 s, 376 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5431
+ },
+ {
+  "path": "live_dynamic/run_0930_033323_083.json",
+  "name": "live_run_83",
+  "description": "Live controller run 83 (dynamic): 111.4 s, 189 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2785
+ },
+ {
+  "path": "live_dynamic/run_0930_033506_084.json",
+  "name": "live_run_84",
+  "description": "Live controller run 84 (dynamic): 102.9 s, 173 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2573
+ },
+ {
+  "path": "live_dynamic/run_0930_033815_086.json",
+  "name": "live_run_86",
+  "description": "Live controller run 86 (dynamic): 166.2 s, 289 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4154
+ },
+ {
+  "path": "live_dynamic/run_0930_034321_090.json",
+  "name": "live_run_90",
+  "description": "Live controller run 90 (dynamic): 205.2 s, 354 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5130
+ },
+ {
+  "path": "live_dynamic/run_0930_034537_091.json",
+  "name": "live_run_91",
+  "description": "Live controller run 91 (dynamic): 136.4 s, 229 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3410
+ },
+ {
+  "path": "live_dynamic/run_0930_034750_092.json",
+  "name": "live_run_92",
+  "description": "Live controller run 92 (dynamic): 132.3 s, 227 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3307
+ },
+ {
+  "path": "live_dynamic/run_0930_035035_095.json",
+  "name": "live_run_95",
+  "description": "Live controller run 95 (dynamic): 100.3 s, 173 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2507
+ },
+ {
+  "path": "live_dynamic/run_0930_035322_096.json",
+  "name": "live_run_96",
+  "description": "Live controller run 96 (dynamic): 167.6 s, 282 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4189
+ },
+ {
+  "path": "live_dynamic/run_0930_040010_099.json",
+  "name": "live_run_99",
+  "description": "Live controller run 99 (dynamic): 330.6 s, 580 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 8266
+ },
+ {
+  "path": "live_dynamic/run_0930_040303_100.json",
+  "name": "live_run_100",
+  "description": "Live controller run 100 (dynamic): 173.8 s, 296 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4346
+ },
+ {
+  "path": "live_dynamic/run_0930_040513_102.json",
+  "name": "live_run_102",
+  "description": "Live controller run 102 (dynamic): 108.1 s, 191 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2703
+ },
+ {
+  "path": "live_dynamic/run_0930_041047_103.json",
+  "name": "live_run_103",
+  "description": "Live controller run 103 (dynamic): 334.6 s, 575 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 8365
+ },
+ {
+  "path": "live_dynamic/run_0930_041241_104.json",
+  "name": "live_run_104",
+  "description": "Live controller run 104 (dynamic): 109.8 s, 191 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2746
+ },
+ {
+  "path": "live_dynamic/run_0930_041512_106.json",
+  "name": "live_run_106",
+  "description": "Live controller run 106 (dynamic): 136.2 s, 232 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3404
+ },
+ {
+  "path": "live_dynamic/run_0930_041727_107.json",
+  "name": "live_run_107",
+  "description": "Live controller run 107 (dynamic): 134.7 s, 233 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3367
+ },
+ {
+  "path": "live_dynamic/run_0930_042043_108.json",
+  "name": "live_run_108",
+  "description": "Live controller run 108 (dynamic): 192.9 s, 335 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4822
+ },
+ {
+  "path": "live_dynamic/run_0930_042203_109.json",
+  "name": "live_run_109",
+  "description": "Live controller run 109 (dynamic): 80.8 s, 137 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2019
+ },
+ {
+  "path": "live_dynamic/run_0930_043842_110.json",
+  "name": "live_run_110",
+  "description": "Live controller run 110 (dynamic): 998.6 s, 1702 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 24964
+ },
+ {
+  "path": "live_dynamic/run_0930_044038_111.json",
+  "name": "live_run_111",
+  "description": "Live controller run 111 (dynamic): 116.2 s, 206 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2904
+ },
+ {
+  "path": "live_dynamic/run_0930_044858_112.json",
+  "name": "live_run_112",
+  "description": "Live controller run 112 (dynamic): 487.8 s, 866 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 12196
+ },
+ {
+  "path": "live_dynamic/run_0930_045011_114.json",
+  "name": "live_run_114",
+  "description": "Live controller run 114 (dynamic): 60.2 s, 102 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1506
+ },
+ {
+  "path": "live_dynamic/run_0930_045747_116.json",
+  "name": "live_run_116",
+  "description": "Live controller run 116 (dynamic): 397.8 s, 679 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 9945
+ },
+ {
+  "path": "live_dynamic/run_0930_050132_117.json",
+  "name": "live_run_117",
+  "description": "Live controller run 117 (dynamic): 226.1 s, 386 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5652
+ },
+ {
+  "path": "live_dynamic/run_0930_050356_118.json",
+  "name": "live_run_118",
+  "description": "Live controller run 118 (dynamic): 138.5 s, 235 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3462
+ },
+ {
+  "path": "live_dynamic/run_0930_050622_120.json",
+  "name": "live_run_120",
+  "description": "Live controller run 120 (dynamic): 132.9 s, 236 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3322
+ },
+ {
+  "path": "live_dynamic/run_0930_050804_122.json",
+  "name": "live_run_122",
+  "description": "Live controller run 122 (dynamic): 61.0 s, 108 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1524
+ },
+ {
+  "path": "live_dynamic/run_0930_051200_123.json",
+  "name": "live_run_123",
+  "description": "Live controller run 123 (dynamic): 235.8 s, 405 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5895
+ },
+ {
+  "path": "live_dynamic/run_0930_051328_124.json",
+  "name": "live_run_124",
+  "description": "Live controller run 124 (dynamic): 84.6 s, 142 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2116
+ },
+ {
+  "path": "live_dynamic/run_0930_051550_125.json",
+  "name": "live_run_125",
+  "description": "Live controller run 125 (dynamic): 137.2 s, 243 moves, ended: no continuation. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3431
+ },
+ {
+  "path": "live_dynamic/run_0930_051935_128.json",
+  "name": "live_run_128",
+  "description": "Live controller run 128 (dynamic): 182.4 s, 313 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4560
+ },
+ {
+  "path": "live_dynamic/run_0930_052157_130.json",
+  "name": "live_run_130",
+  "description": "Live controller run 130 (dynamic): 98.6 s, 170 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2465
+ },
+ {
+  "path": "live_dynamic/run_0930_052410_131.json",
+  "name": "live_run_131",
+  "description": "Live controller run 131 (dynamic): 131.5 s, 224 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3288
+ },
+ {
+  "path": "live_dynamic/run_0930_052856_134.json",
+  "name": "live_run_134",
+  "description": "Live controller run 134 (dynamic): 259.6 s, 438 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6490
+ },
+ {
+  "path": "live_dynamic/run_0930_053530_136.json",
+  "name": "live_run_136",
+  "description": "Live controller run 136 (dynamic): 337.8 s, 590 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 8444
+ },
+ {
+  "path": "live_dynamic/run_0930_053948_137.json",
+  "name": "live_run_137",
+  "description": "Live controller run 137 (dynamic): 258.2 s, 443 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6454
+ },
+ {
+  "path": "live_dynamic/run_0930_054519_138.json",
+  "name": "live_run_138",
+  "description": "Live controller run 138 (dynamic): 328.9 s, 567 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 8223
+ },
+ {
+  "path": "live_dynamic/run_0930_054752_141.json",
+  "name": "live_run_141",
+  "description": "Live controller run 141 (dynamic): 80.1 s, 141 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2002
+ },
+ {
+  "path": "live_dynamic/run_0930_055114_143.json",
+  "name": "live_run_143",
+  "description": "Live controller run 143 (dynamic): 145.8 s, 254 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3646
+ },
+ {
+  "path": "live_dynamic/run_0930_055501_144.json",
+  "name": "live_run_144",
+  "description": "Live controller run 144 (dynamic): 224.5 s, 383 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5612
+ },
+ {
+  "path": "live_dynamic/run_0930_055846_146.json",
+  "name": "live_run_146",
+  "description": "Live controller run 146 (dynamic): 179.6 s, 304 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4489
+ },
+ {
+  "path": "live_dynamic/run_0930_060009_147.json",
+  "name": "live_run_147",
+  "description": "Live controller run 147 (dynamic): 75.3 s, 126 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1882
+ },
+ {
+  "path": "live_dynamic/run_0930_060137_148.json",
+  "name": "live_run_148",
+  "description": "Live controller run 148 (dynamic): 84.6 s, 146 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2114
+ },
+ {
+  "path": "live_dynamic/run_0930_060311_149.json",
+  "name": "live_run_149",
+  "description": "Live controller run 149 (dynamic): 92.3 s, 154 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2308
+ },
+ {
+  "path": "live_dynamic/run_0930_060606_151.json",
+  "name": "live_run_151",
+  "description": "Live controller run 151 (dynamic): 119.6 s, 202 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2990
+ },
+ {
+  "path": "live_dynamic/run_0930_060857_154.json",
+  "name": "live_run_154",
+  "description": "Live controller run 154 (dynamic): 132.8 s, 233 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3321
+ },
+ {
+  "path": "live_dynamic/run_0930_061208_156.json",
+  "name": "live_run_156",
+  "description": "Live controller run 156 (dynamic): 154.4 s, 268 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3861
+ },
+ {
+  "path": "live_dynamic/run_0930_061332_157.json",
+  "name": "live_run_157",
+  "description": "Live controller run 157 (dynamic): 80.2 s, 136 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2004
+ },
+ {
+  "path": "live_dynamic/run_0930_061441_158.json",
+  "name": "live_run_158",
+  "description": "Live controller run 158 (dynamic): 69.9 s, 124 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1748
+ },
+ {
+  "path": "live_dynamic/run_0930_061834_160.json",
+  "name": "live_run_160",
+  "description": "Live controller run 160 (dynamic): 176.8 s, 304 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4420
+ },
+ {
+  "path": "live_dynamic/run_0930_062010_162.json",
+  "name": "live_run_162",
+  "description": "Live controller run 162 (dynamic): 69.3 s, 119 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1733
+ },
+ {
+  "path": "live_dynamic/run_0930_062401_163.json",
+  "name": "live_run_163",
+  "description": "Live controller run 163 (dynamic): 230.9 s, 393 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5772
+ },
+ {
+  "path": "live_dynamic/run_0930_062556_166.json",
+  "name": "live_run_166",
+  "description": "Live controller run 166 (dynamic): 90.6 s, 153 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2264
+ },
+ {
+  "path": "live_dynamic/run_0930_062732_167.json",
+  "name": "live_run_167",
+  "description": "Live controller run 167 (dynamic): 95.9 s, 166 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2397
+ },
+ {
+  "path": "live_dynamic/run_0930_063156_168.json",
+  "name": "live_run_168",
+  "description": "Live controller run 168 (dynamic): 262.7 s, 448 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6567
+ },
+ {
+  "path": "live_dynamic/run_0930_063454_170.json",
+  "name": "live_run_170",
+  "description": "Live controller run 170 (dynamic): 143.9 s, 249 moves, ended: no continuation. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3597
+ },
+ {
+  "path": "live_dynamic/run_0930_063831_172.json",
+  "name": "live_run_172",
+  "description": "Live controller run 172 (dynamic): 204.0 s, 348 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5101
+ },
+ {
+  "path": "live_dynamic/run_0930_064210_173.json",
+  "name": "live_run_173",
+  "description": "Live controller run 173 (dynamic): 219.3 s, 372 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5482
+ },
+ {
+  "path": "live_dynamic/run_0930_064533_174.json",
+  "name": "live_run_174",
+  "description": "Live controller run 174 (dynamic): 201.6 s, 349 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5039
+ },
+ {
+  "path": "live_dynamic/run_0930_064818_175.json",
+  "name": "live_run_175",
+  "description": "Live controller run 175 (dynamic): 165.3 s, 289 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4133
+ },
+ {
+  "path": "live_dynamic/run_0930_065057_177.json",
+  "name": "live_run_177",
+  "description": "Live controller run 177 (dynamic): 147.2 s, 252 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3679
+ },
+ {
+  "path": "live_dynamic/run_0930_065708_178.json",
+  "name": "live_run_178",
+  "description": "Live controller run 178 (dynamic): 371.4 s, 632 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 9285
+ },
+ {
+  "path": "live_dynamic/run_0930_070005_179.json",
+  "name": "live_run_179",
+  "description": "Live controller run 179 (dynamic): 177.2 s, 303 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4430
+ },
+ {
+  "path": "live_dynamic/run_0930_070326_180.json",
+  "name": "live_run_180",
+  "description": "Live controller run 180 (dynamic): 197.8 s, 335 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4944
+ },
+ {
+  "path": "live_dynamic/run_0930_070814_182.json",
+  "name": "live_run_182",
+  "description": "Live controller run 182 (dynamic): 275.9 s, 484 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6897
+ },
+ {
+  "path": "live_dynamic/run_0930_071720_184.json",
+  "name": "live_run_184",
+  "description": "Live controller run 184 (dynamic): 506.2 s, 878 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 12656
+ },
+ {
+  "path": "live_dynamic/run_0930_071934_185.json",
+  "name": "live_run_185",
+  "description": "Live controller run 185 (dynamic): 133.3 s, 229 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3333
+ },
+ {
+  "path": "live_dynamic/run_0930_072537_187.json",
+  "name": "live_run_187",
+  "description": "Live controller run 187 (dynamic): 315.5 s, 540 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 7887
+ },
+ {
+  "path": "live_dynamic/run_0930_072830_188.json",
+  "name": "live_run_188",
+  "description": "Live controller run 188 (dynamic): 167.0 s, 289 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4176
+ },
+ {
+  "path": "live_dynamic/run_0930_073504_190.json",
+  "name": "live_run_190",
+  "description": "Live controller run 190 (dynamic): 382.0 s, 653 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 9551
+ },
+ {
+  "path": "live_dynamic/run_0930_073754_191.json",
+  "name": "live_run_191",
+  "description": "Live controller run 191 (dynamic): 169.3 s, 290 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4232
+ },
+ {
+  "path": "live_dynamic/run_0930_074029_192.json",
+  "name": "live_run_192",
+  "description": "Live controller run 192 (dynamic): 152.8 s, 267 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3820
+ },
+ {
+  "path": "live_dynamic/run_0930_074149_193.json",
+  "name": "live_run_193",
+  "description": "Live controller run 193 (dynamic): 80.1 s, 135 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2002
+ },
+ {
+  "path": "live_dynamic/run_0930_074301_194.json",
+  "name": "live_run_194",
+  "description": "Live controller run 194 (dynamic): 73.1 s, 126 moves, ended: no continuation. Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1827
+ },
+ {
+  "path": "live_dynamic/run_0930_074518_196.json",
+  "name": "live_run_196",
+  "description": "Live controller run 196 (dynamic): 66.8 s, 114 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1669
+ },
+ {
+  "path": "live_dynamic/run_0930_074625_197.json",
+  "name": "live_run_197",
+  "description": "Live controller run 197 (dynamic): 63.9 s, 110 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1598
+ },
+ {
+  "path": "live_dynamic/run_0930_075202_199.json",
+  "name": "live_run_199",
+  "description": "Live controller run 199 (dynamic): 322.4 s, 557 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 8061
+ },
+ {
+  "path": "live_dynamic/run_0930_075611_200.json",
+  "name": "live_run_200",
+  "description": "Live controller run 200 (dynamic): 247.4 s, 419 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6185
+ },
+ {
+  "path": "live_dynamic/run_0930_075906_202.json",
+  "name": "live_run_202",
+  "description": "Live controller run 202 (dynamic): 128.2 s, 225 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3206
+ },
+ {
+  "path": "live_dynamic/run_0930_080510_206.json",
+  "name": "live_run_206",
+  "description": "Live controller run 206 (dynamic): 287.2 s, 487 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 7181
+ },
+ {
+  "path": "live_dynamic/run_0930_080756_207.json",
+  "name": "live_run_207",
+  "description": "Live controller run 207 (dynamic): 165.3 s, 285 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4133
+ },
+ {
+  "path": "feeding/capture_test_seed0.json",
+  "name": "capture_test_seed0",
+  "description": "Controlled capture test (seed 0): a worthy 1,200 ball placed 1,500 units from a 3,500 team. CAPTURED at 2.2 s by a feed-assisted swallow; team 3,500 -> 4,700.",
+  "source": "sim",
+  "ticks": 159
+ },
+ {
+  "path": "feeding/capture_test_seed1.json",
+  "name": "capture_test_seed1",
+  "description": "Controlled capture test (seed 1): a worthy 1,200 ball placed 1,500 units from a 3,500 team. No capture in 12.0 s (team 3,500).",
+  "source": "sim",
+  "ticks": 298
+ },
+ {
+  "path": "feeding/capture_test_seed2.json",
+  "name": "capture_test_seed2",
+  "description": "Controlled capture test (seed 2): a worthy 1,200 ball placed 1,500 units from a 3,500 team. CAPTURED at 1.3 s by a feed-assisted swallow; team 3,500 -> 4,731.",
+  "source": "sim",
+  "ticks": 150
+ },
+ {
+  "path": "stage2_rejected/messy_greedy_search_REJECTED.json",
+  "name": "messy_greedy_search_REJECTED",
+  "description": "REJECTED example (not a splitrun): greedy scripted controller tuned by search. Lots of alternating eats but messy -- the layout never repeats. Kept to show what the detector must reject.",
+  "source": "sim",
+  "ticks": 4500
+ },
+ {
+  "path": "live/run_002.json",
+  "name": "live_run_2",
+  "description": "Live controller run 2: 80.0 s, 179 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1999
+ },
+ {
+  "path": "live/run_006.json",
+  "name": "live_run_6",
+  "description": "Live controller run 6: 104.9 s, 230 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2623
+ },
+ {
+  "path": "live/run_015.json",
+  "name": "live_run_15",
+  "description": "Live controller run 15: 63.9 s, 139 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1597
+ },
+ {
+  "path": "live/run_0929_212609_002.json",
+  "name": "live_run_2",
+  "description": "Live controller run 2: 198.4 s, 434 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4961
+ },
+ {
+  "path": "live/run_0929_212829_004.json",
+  "name": "live_run_4",
+  "description": "Live controller run 4: 105.8 s, 231 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2644
+ },
+ {
+  "path": "live/run_0929_213114_006.json",
+  "name": "live_run_6",
+  "description": "Live controller run 6: 152.1 s, 331 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3802
+ },
+ {
+  "path": "live/run_0929_213855_007.json",
+  "name": "live_run_7",
+  "description": "Live controller run 7: 461.2 s, 1032 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 11531
+ },
+ {
+  "path": "live/run_0929_214329_008.json",
+  "name": "live_run_8",
+  "description": "Live controller run 8: 273.1 s, 607 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6828
+ },
+ {
+  "path": "live/run_0929_215212_009.json",
+  "name": "live_run_9",
+  "description": "Live controller run 9: 516.5 s, 1128 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 12912
+ },
+ {
+  "path": "live/run_0929_220152_010.json",
+  "name": "live_run_10",
+  "description": "Live controller run 10: 578.6 s, 1263 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 14464
+ },
+ {
+  "path": "live/run_0929_221707_011.json",
+  "name": "live_run_11",
+  "description": "Live controller run 11: 907.8 s, 2004 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 22696
+ },
+ {
+  "path": "live/run_0929_223304_012.json",
+  "name": "live_run_12",
+  "description": "Live controller run 12: 154.8 s, 339 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3870
+ },
+ {
+  "path": "live/run_0929_224012_014.json",
+  "name": "live_run_14",
+  "description": "Live controller run 14: 216.0 s, 475 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5399
+ },
+ {
+  "path": "live/run_0929_224254_015.json",
+  "name": "live_run_15",
+  "description": "Live controller run 15: 162.2 s, 352 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4054
+ },
+ {
+  "path": "live/run_0929_224400_016.json",
+  "name": "live_run_16",
+  "description": "Live controller run 16: 66.0 s, 149 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1650
+ },
+ {
+  "path": "live/run_0929_225046_018.json",
+  "name": "live_run_18",
+  "description": "Live controller run 18: 377.4 s, 836 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 9436
+ },
+ {
+  "path": "live/run_0929_225215_019.json",
+  "name": "live_run_19",
+  "description": "Live controller run 19: 83.2 s, 185 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2080
+ },
+ {
+  "path": "live/run_0929_225656_020.json",
+  "name": "live_run_20",
+  "description": "Live controller run 20: 282.2 s, 623 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 7054
+ },
+ {
+  "path": "live/run_0929_230124_021.json",
+  "name": "live_run_21",
+  "description": "Live controller run 21: 267.5 s, 571 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6687
+ },
+ {
+  "path": "live/run_0929_230910_022.json",
+  "name": "live_run_22",
+  "description": "Live controller run 22: 459.5 s, 996 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 11488
+ },
+ {
+  "path": "live/run_0929_231315_024.json",
+  "name": "live_run_24",
+  "description": "Live controller run 24: 209.7 s, 461 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5242
+ },
+ {
+  "path": "live/run_0929_232237_025.json",
+  "name": "live_run_25",
+  "description": "Live controller run 25: 560.3 s, 1221 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 14008
+ },
+ {
+  "path": "live/run_0929_232819_027.json",
+  "name": "live_run_27",
+  "description": "Live controller run 27: 290.0 s, 639 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 7250
+ },
+ {
+  "path": "live/run_0929_233704_028.json",
+  "name": "live_run_28",
+  "description": "Live controller run 28: 525.0 s, 1164 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 13125
+ },
+ {
+  "path": "live/run_0929_233901_029.json",
+  "name": "live_run_29",
+  "description": "Live controller run 29: 110.3 s, 242 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2758
+ },
+ {
+  "path": "live/run_0929_234343_030.json",
+  "name": "live_run_30",
+  "description": "Live controller run 30: 279.9 s, 616 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6998
+ },
+ {
+  "path": "live/run_0929_234613_032.json",
+  "name": "live_run_32",
+  "description": "Live controller run 32: 93.9 s, 210 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2348
+ },
+ {
+  "path": "live/run_0929_234842_033.json",
+  "name": "live_run_33",
+  "description": "Live controller run 33: 149.1 s, 330 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3728
+ },
+ {
+  "path": "live/run_0929_235436_034.json",
+  "name": "live_run_34",
+  "description": "Live controller run 34: 354.0 s, 784 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 8849
+ },
+ {
+  "path": "live/run_0929_235840_035.json",
+  "name": "live_run_35",
+  "description": "Live controller run 35: 238.6 s, 520 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5964
+ },
+ {
+  "path": "live/run_0930_000037_036.json",
+  "name": "live_run_36",
+  "description": "Live controller run 36: 112.1 s, 254 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2802
+ },
+ {
+  "path": "live/run_0930_001219_037.json",
+  "name": "live_run_37",
+  "description": "Live controller run 37: 690.0 s, 1507 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 17250
+ },
+ {
+  "path": "live/run_0930_002840_038.json",
+  "name": "live_run_38",
+  "description": "Live controller run 38: 973.8 s, 2142 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 24345
+ },
+ {
+  "path": "live/run_0930_002949_039.json",
+  "name": "live_run_39",
+  "description": "Live controller run 39: 64.8 s, 145 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1619
+ },
+ {
+  "path": "live/run_0930_003357_043.json",
+  "name": "live_run_43",
+  "description": "Live controller run 43: 154.0 s, 350 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3851
+ },
+ {
+  "path": "live/run_0930_003627_044.json",
+  "name": "live_run_44",
+  "description": "Live controller run 44: 150.2 s, 336 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3756
+ },
+ {
+  "path": "live/run_0930_010347_001.json",
+  "name": "live_run_1",
+  "description": "Live controller run 1 (stationary): 270.9 s, 469 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 6772
+ },
+ {
+  "path": "live/run_0930_010609_002.json",
+  "name": "live_run_2",
+  "description": "Live controller run 2 (stationary): 142.2 s, 251 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3556
+ },
+ {
+  "path": "live/run_0930_011410_003.json",
+  "name": "live_run_3",
+  "description": "Live controller run 3 (stationary): 480.4 s, 848 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 12010
+ },
+ {
+  "path": "live/run_0930_011645_004.json",
+  "name": "live_run_4",
+  "description": "Live controller run 4 (stationary): 155.5 s, 273 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 3887
+ },
+ {
+  "path": "live/run_0930_011752_005.json",
+  "name": "live_run_5",
+  "description": "Live controller run 5 (stationary): 63.8 s, 113 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 1594
+ },
+ {
+  "path": "live/run_0930_011943_006.json",
+  "name": "live_run_6",
+  "description": "Live controller run 6 (stationary): 110.4 s, 197 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 2760
+ },
+ {
+  "path": "live/run_0930_012708_007.json",
+  "name": "live_run_7",
+  "description": "Live controller run 7 (stationary): 438.9 s, 752 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 10973
+ },
+ {
+  "path": "live/run_0930_013048_008.json",
+  "name": "live_run_8",
+  "description": "Live controller run 8 (stationary): 219.1 s, 385 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 5477
+ },
+ {
+  "path": "live/run_0930_013358_009.json",
+  "name": "live_run_9",
+  "description": "Live controller run 9 (stationary): 186.6 s, 316 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4665
+ },
+ {
+  "path": "live/run_0930_013641_010.json",
+  "name": "live_run_10",
+  "description": "Live controller run 10 (stationary): 162.8 s, 281 moves, ended: stuck (watchdog). Receding-horizon beam search over designed moves.",
+  "source": "sim",
+  "ticks": 4070
+ },
+ {
+  "path": "live/test_run_218s.json",
+  "name": "live_controller_218s",
+  "description": "Live controller (receding-horizon beam search over designed moves): 217.8 s without breaking a rule (stopped by the test time limit), 512 split presses, gap 0.45 s average (max 0.68 s), 38 double splits, 123 off-circle splits.",
+  "source": "sim",
+  "ticks": 5444
+ },
+ {
+  "path": "rl/imb_b/eval_00100.json",
+  "name": "eval_00100",
+  "description": "PPO policy (deterministic) for technique random_e2_imb2_good#12: 0.0 cycles in 63 ticks from a pool start. Phase-aligned periodicity: None",
+  "source": "sim",
+  "ticks": 31
+ },
+ {
+  "path": "rl/imb_b/eval_00125.json",
+  "name": "eval_00125",
+  "description": "PPO policy (deterministic) for technique random_e2_imb2_good#12: 0.0 cycles in 83 ticks from a pool start. Phase-aligned periodicity: None",
+  "source": "sim",
+  "ticks": 41
+ },
+ {
+  "path": "rl/discover_s1_flight3/eval_08725.json",
+  "name": "eval_08725",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 182.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': True, 'period_ticks': 24, 'roles_swap': False, 'periodic_cycles': 31.4, 'layout_error': 0.2, 'rotations': 20.25, 'centre_drift': 103, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/discover_s1_flight3/eval_08750.json",
+  "name": "eval_08750",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 183.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': True, 'period_ticks': 21, 'roles_swap': False, 'periodic_cycles': 35.8, 'layout_error': 3.7, 'rotations': 20.2, 'centre_drift': 113, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/imb_c/eval_00425.json",
+  "name": "eval_00425",
+  "description": "PPO policy (deterministic) for technique random_e2_imb2_good#12: 0.0 cycles in 90 ticks from a pool start. Phase-aligned periodicity: None",
+  "source": "sim",
+  "ticks": 44
+ },
+ {
+  "path": "rl/imb_c/eval_00450.json",
+  "name": "eval_00450",
+  "description": "PPO policy (deterministic) for technique random_e2_imb2_good#12: 0.0 cycles in 83 ticks from a pool start. Phase-aligned periodicity: None",
+  "source": "sim",
+  "ticks": 41
+ },
+ {
+  "path": "rl/discoveries/discover_6split_latest.json",
+  "name": "discover_6split_latest",
+  "description": "RL discovery: the 6-split cycle (B,A,B,A,B,A) that BOTH discovery runs converged to independently. Repeats every 6 splits for 26 consecutive cycles (26/27), median layout error 0.2 units, 27 ticks per cycle; 17.44 rotations, centre drift 190 units.",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/discoveries/discover_novel_5split_mirror.json",
+  "name": "discover_novel_5split_mirror",
+  "description": "RL discovery with the 2+3 mass lattice excluded (novelty run): a 5-split cycle that comes back MIRRORED (A and B swap roles) -> 10 splits per full cycle. Repeats 28/37 half-cycles (longest run 18), median layout error 22.9 units, 20 ticks per half-cycle; 17.2 rotations, drift 168 units. Pieces are multiples of 1,321 (1/28 of the total). Early and not yet stable.",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/discoveries/discover_s0_best.json",
+  "name": "discover_s0_best",
+  "description": "RL discovery (discover_s0, no target technique): 6-split cycle (B,A,B,A,B,A). Best evaluation eval_01650.json: the layout repeats every 6 splits for 25 consecutive cycles (25/25), median layout error 0.9 units, 29 ticks per cycle; 15.21 rotations, centre drift 133 units. Pieces: 12,333 / 6,167 / 3,083 (the 2+3 technique's masses).",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/discoveries/discover_s1_flight3_best.json",
+  "name": "discover_s1_flight3_best",
+  "description": "RL discovery (discover_s1_flight3, no target technique): 2-split cycle (A and B split 1 tick apart). Best evaluation eval_01275.json: the layout repeats every 2 splits for 78 consecutive cycles (78/78), median layout error 53.9 units, 9 ticks per cycle; 15.77 rotations, centre drift 161 units. Pieces: 12,333 / 6,167 / 3,083 (the 2+3 technique's masses).",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/cont_a/eval_00475.json",
+  "name": "eval_00475",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 0.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': False, 'period_ticks': 88, 'roles_swap': False, 'periodic_cycles': 3.7, 'layout_error': 24.5, 'rotations': 19.88, 'centre_drift': 228, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/cont_a/eval_00500.json",
+  "name": "eval_00500",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 0.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': True, 'period_ticks': 21, 'roles_swap': False, 'periodic_cycles': 32.7, 'layout_error': 8.9, 'rotations': 19.42, 'centre_drift': 208, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/translate_a/eval_00750.json",
+  "name": "eval_00750",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 182.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': False, 'period_ticks': 72, 'roles_swap': False, 'periodic_cycles': 7.5, 'layout_error': 11.0, 'rotations': 20.05, 'centre_drift': 1325, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/translate_a/eval_00775.json",
+  "name": "eval_00775",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 182.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': False, 'period_ticks': 72, 'roles_swap': False, 'periodic_cycles': 8.6, 'layout_error': 16.3, 'rotations': 20.29, 'centre_drift': 1815, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/AABB0_ppo/eval_00250.json",
+  "name": "eval_00250",
+  "description": "PPO policy (deterministic) for technique random_e4_AABB_ranked#0: 0.0 cycles in 87 ticks from a pool start. Phase-aligned periodicity: None",
+  "source": "sim",
+  "ticks": 43
+ },
+ {
+  "path": "rl/AABB0_ppo/eval_00275.json",
+  "name": "eval_00275",
+  "description": "PPO policy (deterministic) for technique random_e4_AABB_ranked#0: 0.67 cycles in 113 ticks from a pool start. Phase-aligned periodicity: None",
+  "source": "sim",
+  "ticks": 56
+ },
+ {
+  "path": "rl/discover_s0/eval_09075.json",
+  "name": "eval_09075",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 182.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': True, 'period_ticks': 24, 'roles_swap': False, 'periodic_cycles': 30.0, 'layout_error': 0.2, 'rotations': 20.32, 'centre_drift': 97, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/discover_s0/eval_09100.json",
+  "name": "eval_09100",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 182.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': True, 'period_ticks': 21, 'roles_swap': False, 'periodic_cycles': 35.0, 'layout_error': 0.2, 'rotations': 20.14, 'centre_drift': 115, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/t4_ppo/eval_04200.json",
+  "name": "eval_04200",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 30.0 cycles in 1500 ticks from a pool start. Detector: {'splitrun': True, 'period_ticks': 26, 'roles_swap': True, 'periodic_cycles': 26.6, 'layout_error': 9.8, 'rotations': 3.95, 'centre_drift': 302, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/t4_ppo/eval_04225.json",
+  "name": "eval_04225",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 30.67 cycles in 1500 ticks from a pool start. Detector: {'splitrun': False, 'period_ticks': 73, 'roles_swap': True, 'periodic_cycles': 7.1, 'layout_error': 0.5, 'rotations': 3.97, 'centre_drift': 308, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/imb_a/eval_00425.json",
+  "name": "eval_00425",
+  "description": "PPO policy (deterministic) for technique random_e2_imb2_good#12: 0.0 cycles in 101 ticks from a pool start. Phase-aligned periodicity: None",
+  "source": "sim",
+  "ticks": 50
+ },
+ {
+  "path": "rl/imb_a/eval_00450.json",
+  "name": "eval_00450",
+  "description": "PPO policy (deterministic) for technique random_e2_imb2_good#12: 0.0 cycles in 68 ticks from a pool start. Phase-aligned periodicity: None",
+  "source": "sim",
+  "ticks": 33
+ },
+ {
+  "path": "rl/discover_novel/eval_02400.json",
+  "name": "eval_02400",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 211.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': True, 'period_ticks': 39, 'roles_swap': False, 'periodic_cycles': 18.8, 'layout_error': 25.3, 'rotations': 18.62, 'centre_drift': 176, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/discover_novel/eval_02425.json",
+  "name": "eval_02425",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 211.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': True, 'period_ticks': 21, 'roles_swap': False, 'periodic_cycles': 32.7, 'layout_error': 0.2, 'rotations': 18.65, 'centre_drift': 161, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/cont_b/eval_00475.json",
+  "name": "eval_00475",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 0.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': True, 'period_ticks': 24, 'roles_swap': False, 'periodic_cycles': 29.5, 'layout_error': 4.1, 'rotations': 20.41, 'centre_drift': 315, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/cont_b/eval_00500.json",
+  "name": "eval_00500",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 0.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': True, 'period_ticks': 56, 'roles_swap': False, 'periodic_cycles': 12.4, 'layout_error': 11.4, 'rotations': 20.84, 'centre_drift': 178, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/AAB1_ppo/eval_00250.json",
+  "name": "eval_00250",
+  "description": "PPO policy (deterministic) for technique random_e3_AAB_ranked#1: 0.43 cycles in 41 ticks from a pool start. Phase-aligned periodicity: None",
+  "source": "sim",
+  "ticks": 20
+ },
+ {
+  "path": "rl/AAB1_ppo/eval_00275.json",
+  "name": "eval_00275",
+  "description": "PPO policy (deterministic) for technique random_e3_AAB_ranked#1: 0.29 cycles in 29 ticks from a pool start. Phase-aligned periodicity: None",
+  "source": "sim",
+  "ticks": 14
+ },
+ {
+  "path": "rl/discover_novel_pertick/eval_04500.json",
+  "name": "eval_04500",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 8.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': False, 'period_ticks': 38, 'roles_swap': False, 'periodic_cycles': 1.3, 'layout_error': 53.2, 'rotations': 14.46, 'centre_drift': 1308, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/discover_novel_pertick/eval_04525.json",
+  "name": "eval_04525",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 8.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': False, 'period_ticks': 21, 'roles_swap': False, 'periodic_cycles': 1.7, 'layout_error': 43.3, 'rotations': 13.54, 'centre_drift': 935, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/cont_c/eval_00400.json",
+  "name": "eval_00400",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 0.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': False, 'period_ticks': 288, 'roles_swap': False, 'periodic_cycles': 2.3, 'layout_error': 13.9, 'rotations': 21.12, 'centre_drift': 248, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/cont_c/eval_00425.json",
+  "name": "eval_00425",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 0.0 cycles in 107 ticks from a pool start. Phase-aligned periodicity: None",
+  "source": "sim",
+  "ticks": 53
+ },
+ {
+  "path": "rl/translate_b/eval_01275.json",
+  "name": "eval_01275",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 26.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': False, 'period_ticks': 131, 'roles_swap': False, 'periodic_cycles': 1.6, 'layout_error': 25.2, 'rotations': 12.55, 'centre_drift': 2961, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/translate_b/eval_01300.json",
+  "name": "eval_01300",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 14.0 cycles in 579 ticks from a pool start. Phase-aligned periodicity: {'splitrun': False, 'period_ticks': 129, 'roles_swap': False, 'periodic_cycles': 1.5, 'layout_error': 41.9, 'rotations': 4.38, 'centre_drift': 2993, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 289
+ },
+ {
+  "path": "rl/translate_d/eval_00950.json",
+  "name": "eval_00950",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 59.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': False, 'period_ticks': 132, 'roles_swap': False, 'periodic_cycles': 1.6, 'layout_error': 45.2, 'rotations': 12.22, 'centre_drift': 7959, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/translate_d/eval_00975.json",
+  "name": "eval_00975",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 65.0 cycles in 1500 ticks from a pool start. Phase-aligned periodicity: {'splitrun': False, 'period_ticks': 126, 'roles_swap': False, 'periodic_cycles': 1.3, 'layout_error': 38.7, 'rotations': 12.87, 'centre_drift': 8148, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 749
+ },
+ {
+  "path": "rl/translate_c/eval_00800.json",
+  "name": "eval_00800",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 5.0 cycles in 521 ticks from a pool start. Phase-aligned periodicity: {'splitrun': False, 'period_ticks': 20, 'roles_swap': False, 'periodic_cycles': 1.5, 'layout_error': 49.8, 'rotations': 3.54, 'centre_drift': 2994, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 260
+ },
+ {
+  "path": "rl/translate_c/eval_00825.json",
+  "name": "eval_00825",
+  "description": "PPO policy (deterministic) for technique catalogue_s3_e2_p8#4: 10.0 cycles in 579 ticks from a pool start. Phase-aligned periodicity: {'splitrun': False, 'period_ticks': 139, 'roles_swap': False, 'periodic_cycles': 1.1, 'layout_error': 41.6, 'rotations': 4.14, 'centre_drift': 2995, 'mass_both_ways': True, 'both_alive': True}",
+  "source": "sim",
+  "ticks": 289
+ },
+ {
+  "path": "techniques/imbalanced_circle_1p6x_one_cycle.json",
+  "name": "imbalanced_circle_1p6x_one_cycle",
+  "description": "Imbalanced circle, A 1.6x B (A 12,870 + 6,435 + 3,217 | B 6,435 + 4,826 + 3,217). Found by the mass maths; geometry built from technique 0 plus a translated extra pair. The first cycle is exact (all 5 eats, masses return); the second cycle does not repeat yet. Every launched piece is used exactly once.",
+  "source": "sim",
+  "ticks": 204
+ },
+ {
+  "path": "techniques/technique_0.json",
+  "name": "technique_0",
+  "description": "Technique 0 (mirror every 1 split; cycle 10 ticks = 0.40 s; mass stability 0.82). Start A: 6,167 + 12,333 | B: 9,250 + 6,167 + 3,083. A single-splits; A's just-launched piece eats B's backpiece (3,083); B's piece eats A's launched piece (3,083). Clean cycles in this run: 60/60.",
+  "source": "sim",
+  "ticks": 600
+ },
+ {
+  "path": "techniques/technique_2plus2.json",
+  "name": "technique_2plus2",
+  "description": "technique_2plus2 (a 2-split technique shown over 4 splits: its state repeats after every 2 splits; cycle 44 ticks = 1.76 s; mass stability self-correcting). Start A: 10,091 + 6,727 | B: 13,455 + 6,727. B single-splits; A's 10,091 eats B's 3,364. A single-splits; A's 6,727 eats B's 3,364; B's 6,727 eats A's 3,364; B's 10,091 eats A's 3,364. B single-splits; A's 10,091 eats B's 3,364. A single-splits; B's 6,727 eats A's 3,364; A's 6,727 eats B's 3,364; B's 10,091 eats A's 3,364. Clean cycles in this run: 60/60.",
+  "source": "sim",
+  "ticks": 2640
+ },
+ {
+  "path": "techniques/technique_4.json",
+  "name": "technique_4",
+  "description": "Technique 4 (mirror every 2 splits; cycle 33 ticks = 1.32 s; mass stability 0.61). Start A: 17,412 | B: 10,882 + 4,353 + 4,353. A single-splits; A's just-launched piece eats B's backpiece (4,353). A single-splits; A's just-launched piece eats B's backpiece (4,353); B's piece eats A's launched piece (6,529). Clean cycles in this run: 60/60.",
+  "source": "sim",
+  "ticks": 1980
+ },
+ {
+  "path": "techniques/technique_6.json",
+  "name": "technique_6",
+  "description": "Technique 6 (repeats itself every 2 splits; cycle 19 ticks = 0.76 s; mass stability 0.75). Start A: 5,692 + 11,385 | B: 11,385 + 5,692 + 2,846. A single-splits; A's just-launched piece eats B's backpiece (2,846). B single-splits; A's launched piece eats B's launched piece (2,846); B's just-launched piece eats A's backpiece (2,846); B's just-launched piece eats A's launched piece (2,846). Clean cycles in this run: 60/60.",
+  "source": "sim",
+  "ticks": 1140
+ },
+ {
+  "path": "techniques/technique_7.json",
+  "name": "technique_7",
+  "description": "Technique 7 (mirror every 2 splits; cycle 39 ticks = 1.56 s; mass stability 0.76). Start A: 6,435 + 9,652 | B: 3,217 + 12,870 + 4,826. A single-splits; A's just-launched piece eats B's backpiece (3,217); A's just-launched piece eats B's backpiece (4,826). B single-splits; B's piece eats A's launched piece (3,217). Clean cycles in this run: 60/60.",
+  "source": "sim",
+  "ticks": 2340
+ },
+ {
+  "path": "stage2_pattern23/splitrun_2plus3.json",
+  "name": "splitrun_2plus3",
+  "description": "The '2+3' splitrun (scripted, found from first principles). Before each turn the actor holds 2 pieces (12,333 + 6,167) and the partner 3 (9,250 + 6,167 + 3,083). The actor presses ONE single split: its big piece's half eats the partner's 3,083 backpiece, and its small piece's half flies into the partner's 9,250 and is eaten. The result is the exact mirror image, so the partner does the same back 2.5 s later. 24 turns shown; tested clean for 400 turns (16.5 min), centre drift < 200 units.",
+  "source": "sim",
+  "ticks": 1488
+ },
+ {
+  "path": "stage2_pattern23/splitrun_2plus3_fast.json",
+  "name": "splitrun_2plus3_fast",
+  "description": "2+3 splitrun, FAST version: same technique as splitrun_2plus3 (one single split per turn, big half eats the partner's 3,083 backpiece, small half is fed into the partner's 9,250), but the geometry was re-solved with the turn limited to <= 20 ticks: 19 ticks = 0.76 s per turn instead of 2.5 s. 80 turns shown; tested 400 clean turns.",
+  "source": "sim",
+  "ticks": 1520
+ }
+]

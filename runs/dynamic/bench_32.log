@@ -1,0 +1,2 @@
+{'seed': 0, 'seconds': 8.0, 'speed': 134.6, 'max_lateral': 839.0, 'mean_gap': 0.4, 'max_gap': 0.52, 'splits': 19, 'wall': 200, 'moves': {'dash': (6, 105), 'double': (4, 86), 'push': (3, -5), 'between': (3, 3), 'circle': (2, 41), 'cross': (1, 18)}}
+{'seed': 1, 'seconds': 25.4, 'speed': 201.1, 'max_lateral': 724.0, 'mean_gap': 0.42, 'max_gap': 0.56, 'splits': 60, 'wall': 22, 'moves': {'dash': (21, 131), 'circle': (14, 66), 'between': (11, 90), 'double': (8, -5), 'push': (3, 88), 'trim': (2, 64), 'cross': (1, 89)}}

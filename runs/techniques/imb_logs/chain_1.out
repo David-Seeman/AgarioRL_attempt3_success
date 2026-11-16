@@ -1,0 +1,3 @@
+cycle 0: clean (cost 2.73); controls changed 0.0% ; pool 51 (0s)
+cycle 1: could not find clean controls (cost 10.00); chain ends
+chain of 1 clean cycles; pool 51 states -> runs/rl/chain_circle_imb_1.pkl

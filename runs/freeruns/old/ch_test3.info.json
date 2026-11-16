@@ -1,0 +1,352 @@
+{
+ "name": "ch_test3",
+ "style": {},
+ "seconds": 30.88,
+ "died": false,
+ "moves": [
+  {
+   "tick": 1,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 18,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 28,
+   "move": "between",
+   "actor": "A"
+  },
+  {
+   "tick": 33,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 45,
+   "move": "between",
+   "actor": "B"
+  },
+  {
+   "tick": 61,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 77,
+   "move": "circle",
+   "actor": "A"
+  },
+  {
+   "tick": 86,
+   "move": "between",
+   "actor": "B"
+  },
+  {
+   "tick": 93,
+   "move": "push",
+   "actor": "A"
+  },
+  {
+   "tick": 104,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 121,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 136,
+   "move": "circle",
+   "actor": "B"
+  },
+  {
+   "tick": 142,
+   "move": "between",
+   "actor": "A"
+  },
+  {
+   "tick": 154,
+   "move": "circle",
+   "actor": "A"
+  },
+  {
+   "tick": 169,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 181,
+   "move": "trim",
+   "actor": "B"
+  },
+  {
+   "tick": 190,
+   "move": "circle",
+   "actor": "A"
+  },
+  {
+   "tick": 198,
+   "move": "circle",
+   "actor": "A"
+  },
+  {
+   "tick": 214,
+   "move": "trim",
+   "actor": "A"
+  },
+  {
+   "tick": 219,
+   "move": "circle",
+   "actor": "A"
+  },
+  {
+   "tick": 229,
+   "move": "circle",
+   "actor": "B"
+  },
+  {
+   "tick": 239,
+   "move": "double",
+   "actor": "B"
+  },
+  {
+   "tick": 248,
+   "move": "double",
+   "actor": "A"
+  },
+  {
+   "tick": 264,
+   "move": "double",
+   "actor": "B"
+  },
+  {
+   "tick": 278,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 294,
+   "move": "circle",
+   "actor": "B"
+  },
+  {
+   "tick": 308,
+   "move": "double",
+   "actor": "A"
+  },
+  {
+   "tick": 319,
+   "move": "circle",
+   "actor": "A"
+  },
+  {
+   "tick": 324,
+   "move": "between",
+   "actor": "B"
+  },
+  {
+   "tick": 340,
+   "move": "between",
+   "actor": "A"
+  },
+  {
+   "tick": 353,
+   "move": "circle",
+   "actor": "B"
+  },
+  {
+   "tick": 366,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 379,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 394,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 409,
+   "move": "double",
+   "actor": "A"
+  },
+  {
+   "tick": 426,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 436,
+   "move": "between",
+   "actor": "A"
+  },
+  {
+   "tick": 444,
+   "move": "circle",
+   "actor": "B"
+  },
+  {
+   "tick": 450,
+   "move": "between",
+   "actor": "B"
+  },
+  {
+   "tick": 457,
+   "move": "double",
+   "actor": "B"
+  },
+  {
+   "tick": 472,
+   "move": "between",
+   "actor": "A"
+  },
+  {
+   "tick": 489,
+   "move": "circle",
+   "actor": "A"
+  },
+  {
+   "tick": 496,
+   "move": "circle",
+   "actor": "A"
+  },
+  {
+   "tick": 504,
+   "move": "circle",
+   "actor": "A"
+  },
+  {
+   "tick": 515,
+   "move": "circle",
+   "actor": "B"
+  },
+  {
+   "tick": 525,
+   "move": "between",
+   "actor": "B"
+  },
+  {
+   "tick": 541,
+   "move": "push",
+   "actor": "B"
+  },
+  {
+   "tick": 554,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 567,
+   "move": "trim",
+   "actor": "B"
+  },
+  {
+   "tick": 574,
+   "move": "between",
+   "actor": "A"
+  },
+  {
+   "tick": 583,
+   "move": "double",
+   "actor": "A"
+  },
+  {
+   "tick": 593,
+   "move": "push",
+   "actor": "B"
+  },
+  {
+   "tick": 600,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 615,
+   "move": "push",
+   "actor": "B"
+  },
+  {
+   "tick": 622,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 634,
+   "move": "double",
+   "actor": "A"
+  },
+  {
+   "tick": 643,
+   "move": "circle",
+   "actor": "B"
+  },
+  {
+   "tick": 653,
+   "move": "double",
+   "actor": "A"
+  },
+  {
+   "tick": 659,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 674,
+   "move": "double",
+   "actor": "B"
+  },
+  {
+   "tick": 685,
+   "move": "double",
+   "actor": "B"
+  },
+  {
+   "tick": 694,
+   "move": "between",
+   "actor": "A"
+  },
+  {
+   "tick": 704,
+   "move": "circle",
+   "actor": "A"
+  },
+  {
+   "tick": 713,
+   "move": "between",
+   "actor": "B"
+  },
+  {
+   "tick": 730,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 741,
+   "move": "double",
+   "actor": "B"
+  },
+  {
+   "tick": 756,
+   "move": "both",
+   "actor": "AB"
+  },
+  {
+   "tick": 768,
+   "move": "circle",
+   "actor": "A"
+  }
+ ],
+ "score": 263.3682902298255,
+ "mean_gap_ticks": 11.279411764705882,
+ "max_gap_ticks": 17,
+ "compute_s": 19
+}

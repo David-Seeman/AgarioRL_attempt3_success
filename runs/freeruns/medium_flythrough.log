@@ -1,0 +1,5 @@
+   medium_flythrough: 7.6 s, 20 events, best score 233 (27s)
+   medium_flythrough: 16.0 s, 40 events, best score 426 (66s)
+   medium_flythrough: 21.3 s, 60 events, best score 658 (105s)
+   medium_flythrough: 29.1 s, 80 events, best score 854 (142s)
+medium_flythrough: 30.4 s, died=False, 84 presses, mean gap 9.0 ticks, max 17, moves {'cross': 51, 'circle': 6, 'between': 5, 'trim': 3, 'flythrough': 13, 'double': 4, 'push': 2} (148s)

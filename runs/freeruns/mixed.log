@@ -1,0 +1,4 @@
+   mixed: 7.6 s, 20 events, best score 144 (24s)
+   mixed: 16.3 s, 40 events, best score 220 (59s)
+   mixed: 23.8 s, 60 events, best score 242 (94s)
+mixed: 30.5 s, died=False, 75 presses, mean gap 10.1 ticks, max 17, moves {'both': 5, 'double': 6, 'between': 37, 'push': 10, 'trim': 13, 'circle': 4} (118s)
